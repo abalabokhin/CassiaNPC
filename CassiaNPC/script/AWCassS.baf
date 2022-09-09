@@ -1,0 +1,878 @@
+//////////////////////////////
+////Romance Tracker
+//////////////////////////////
+
+//Global("AWCass-RomanceActive","GLOBAL",0)
+//Global("AWCass-FlirtedWith", "GLOBAL", 1)~
+
+//Restrict Romance for Male Chars with 10+ CHA. No Gnomes or Halflings.
+IF
+    InParty(Myself)
+    Gender(Player1,MALE)
+    !Race(Player1,HALFLING)
+	!Race(Player1,GNOME)
+    CheckStatGT(Player1,9,CHR)
+    Global("AWCass-RomanceMatch","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("AWCass-RomanceMatch","GLOBAL",1)
+        Continue()
+    END
+
+IF
+    InParty(Myself)
+    Global("AWCass-RomanceActive","GLOBAL",0)       //No Relationship Specified
+    !Global("AWCass-RomanceActive","GLOBAL",3)      //No Breakup or Bad Dialogue choices
+    GlobalGT("AWCass-FlirtedWith", "GLOBAL", 0)     //Shown interest at least once
+    Global("AWCass-RomanceMatch","GLOBAL",1)        //Main Char is Male / Meets the match requirements
+    THEN
+    RESPONSE #100
+        SetGlobal("AWCass-RomanceActive","GLOBAL",1)
+        Continue()
+    END
+
+    //Cassia Flirt Timers
+IF
+    InParty(Myself)
+    Global("AWCass-RomanceMatch","GLOBAL",1)
+    OR(2)
+    Global("AWCass-RomanceActive","GLOBAL",1)
+    Global("AWCass-RomanceActive","GLOBAL",2)
+    Global("AWCass-FlirtStart","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-FlirtStart","GLOBAL",1)      
+    RealSetGlobalTimer("AWCass-FlirtTimer","GLOBAL",600)
+    Continue()
+    END
+
+IF
+    InParty(Myself)
+    RealGlobalTimerExpired("AWCass-FlirtTimer","GLOBAL")
+    Global("AWCass-FlirtStop","GLOBAL",0)
+    Global("AWCass-Flirt","GLOBAL",0)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    OR(2)
+    Global("AWCass-RomanceActive","GLOBAL",1)
+    Global("AWCass-RomanceActive","GLOBAL",2)
+    See(Player1)
+    CombatCounter(0)
+    !See([ENEMY])
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-Flirt","GLOBAL",1) 
+    Continue()            
+    END
+
+IF
+    InParty(Myself)
+    Global("AWCass-Flirt","GLOBAL",1)
+    Global("AWCass-FlirtStop","GLOBAL",0)
+    !StateCheck(Myself,CD_STATE_NOTVALID)
+    !StateCheck(Player1,CD_STATE_NOTVALID)
+    See(Player1)
+    THEN
+    RESPONSE #100
+    StartDialogueNoSet(Player1)
+    Continue()
+    END
+
+//ENSURE REST CUTSCENE FIRES
+IF
+    InParty(Myself)
+    Global("AWCass-RomanticRest", "GLOBAL", 1)
+    THEN
+    RESPONSE #100
+        SetGlobal("AWCass-RomanticRest","GLOBAL",2)
+        CutSceneId(Player1)
+        StorePartyLocations()
+        FadeToColor([30.0],0)
+        Wait(1)
+        StartMovie("restinn")
+        AdvanceTime(2400) 
+        ActionOverride(Player1,Rest())
+        ActionOverride(Player2,Rest())
+        ActionOverride(Player3,Rest())
+        ActionOverride(Player4,Rest())
+        ActionOverride(Player5,Rest())
+        ActionOverride(Player6,Rest())
+        Continue()
+    END
+
+//////////////////////////////
+////Alignment Tracker
+//////////////////////////////
+//Global("AWCass-ShiftToGood","GLOBAL",0)
+//Certain Dialogues increment this Variable. If the Variable is at least 3 during the Alignment Shift Dialogue in Lower Dorn's, the shift can occur and Cassia becomes Lawful Good.
+//ChangeAlignment(LastSeenBy(Myself),CHAOTIC_GOOD)
+
+
+
+//////////////////////////////
+////MAIN Dialogue Tree
+//////////////////////////////
+//Easthaven Return
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR1000")
+    Global("AWCass-EasthavenTalk","GLOBAL",0)
+    !Global("Supply_Quest","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-EasthavenTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-EasthavenTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Goblin Pass
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR2000")
+    Global("AWCass-GoblinPass","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-GoblinPass","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-GoblinPass","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Kuldahar Arrival
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR2100")
+    Global("AWCass-KuldaharMission","GLOBAL",0)
+    Global("Vale_Quest", "GLOBAL", 1)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-KuldaharMission","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-KuldaharMission","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Temple of Myrkul
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR3301")
+    Global("AWCass-TombTalk","GLOBAL",0)
+    PartyHasItem("KEYSANC")
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-TombTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-TombTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Training Talk in Kuldahar Post Kresselack
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR2100")
+    Global("KRESS_QUEST","GLOBAL",4)
+    Global("AWCass-TrainingTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-TrainingTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-TrainingTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Kuldahar Root Cellar Date
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR2111")
+    Global("AWCass-KuldaharDate","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-KuldaharDate","GLOBAL",2)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-KuldaharDate","GLOBAL",2)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Temple of the Forgotten God Sanctum
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR3603")
+    Global("AWCass-FaithlessTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-FaithlessTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-FaithlessTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+
+//Dragon Eye Post Egenia Apology
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR4002")
+    GlobalGT("Egenia_Talked","GLOBAL",0)
+    Global("AWCass-ApologyTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-ApologyTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-ApologyTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Presio Dead Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR4003")
+    Global("AWCass-PresioTalk","GLOBAL",0)
+    Dead("PRESIO") //Is Presio Dead?
+    THEN
+    RESPONSE #100
+        SetGlobal("AWCass-PresioTalk","GLOBAL",1)
+        MoveToObject(Player1)      
+        StartDialogue("AWCassJ",Player1)
+        Continue()
+    END
+
+//High Torturer Dead Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR4005")
+    Global("AWCass-TortureTalk","GLOBAL",0) // Set Variable via Interjection
+    Dead("THE HIGH TORTURER") // Set Variable via Interjection
+    THEN
+    RESPONSE #100
+        SetGlobal("AWCass-TortureTalk","GLOBAL",1)
+        MoveToObject(Player1)
+        StartDialogue("AWCassJ",Player1)
+        Continue()
+    END
+
+//Hearstone Gem Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR4005")
+    PartyHasItem("HEARTGM")
+    Global("AWCass-HGemTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-HGemTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-HGemTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Severed Hand Exterior
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR5000")
+    Global("AWCass-HandTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-HandTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-HandTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Severed Hand Safe Level
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR5004")
+    Global("AWCass-HandHubTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-HandHubTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-HandHubTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Severed Hand Romance
+/*
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR5404")
+    Global("AWCass-RomanceActive","GLOBAL",1)
+    !Global("AWCass-RomanceActive","GLOBAL",3)
+    Global("AWCass-HandRomTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-HandRomTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-HandRomTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END*/
+
+//Upper Dorns Dwarf Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR6001")
+    Global("AWCass-DwarfTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-DwarfTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-DwarfTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Krilag Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR6003")
+    PartyHasItem("NOTEKRI")
+    Global("AWCass-KrilagTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-KrilagTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-KrilagTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Hall of Heroes Romance Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    PartyHasItem("FKEY")
+    AreaCheck("AR6006")
+    Global("AWCass-RomanceActive","GLOBAL",2)
+    Global("AWCass-HallRomTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-HallRomTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-HallRomTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Guard Tower Romance Talk (Armor Maintenance)
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR8014")
+    Global("AWCass-RomanceActive","GLOBAL",2)
+    Global("AWCass-TowerRomTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-TowerRomTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-TowerRomTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+
+//Svirfneblin Village Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR8004")
+    Global("AWCass-GnomeTownTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-GnomeTownTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-GnomeTownTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Pre-Poquelin Fight Talk TEST THIS TRIGGER! *Fixed*
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR8012")
+    GlobalGT("ALL_KEYS","GLOBAL",5) // Lower Dorns Badge Door opened
+    Global("AWCass-FinalBossTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-FinalBossTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-FinalBossTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+//Easthaven Return Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR1100")
+    Global("AWCass-EastReturnTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-EastReturnTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-EastReturnTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+// Final Romance Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR1102")
+    Global("AWCass-RomanceActive","GLOBAL",2)
+    Global("AWCass-FinalRomTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-FinalRomTalk","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-FinalRomTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
+
+// Svirfneblin Cutscene
+IF
+    Global("HealGnomeScene", "GLOBAL", 1)
+  THEN
+    RESPONSE #100
+      CutsceneId("AWCass")
+      SetGlobal("HealGnomeScene", "GLOBAL", 2)
+      StartCutSceneMode()
+      MoveToObject("AWGnome")
+      MoveViewObject("AWGnome",VERY_FAST)
+      Wait(1)
+      ForceSpell("AWGnome",CLERIC_HEAL)
+      SmallWait(5)
+      Wait(1)
+      EndCutSceneMode()
+      Continue()
+  END
+  
+// Lordranis Create Symbol.
+IF
+    Global("AWCreateSymbol", "GLOBAL", 1)
+  THEN
+    RESPONSE #100
+        CreateItem("AWringh", 0, 0, 0)
+        IncrementGlobal("AWCreateSymbol", "GLOBAL", 1)
+        Continue()
+  END
+
+//Kuldahar Date Cutscene
+IF
+Global("AWCass-KuldaharDateCutscene", "GLOBAL",1)
+THEN
+RESPONSE #100
+    CutsceneId("AWCass")
+    SetGlobal("AWCass-KuldaharDateCutscene", "GLOBAL", 2)
+    StartCutSceneMode()
+    MoveToPoint([57.224])
+    ActionOverride(Player1,MoveToPoint([233.233]))
+    Wait(3)
+    ActionOverride(Player1,MoveToPoint([136.257]))
+    ActionOverride(Player1,FaceObject("AWCass"))
+    FaceObject(Player1)
+    SmallWait(5)
+    Wait(1)
+    EndCutSceneMode()
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+END
+
+//Severed Hand Prayer Cutscene
+IF
+    Global("AWCass-HandHubCutscene", "GLOBAL",1)
+    Global("AWCass-HandHubCutsceneJoin", "GLOBAL",1)
+    THEN
+    RESPONSE #100
+        CutsceneId("AWCass")
+        SetGlobal("AWCass-HandHubCutscene", "GLOBAL",2)
+        StartCutSceneMode()
+        MoveToPoint([1210.1130])
+        ActionOverride(Player1,MoveToPoint([1190.1070]))
+        MoveViewObject("AWCASS",VERY_FAST)
+        Wait(3)
+        ActionOverride(Player1,FaceObject("AWCass"))
+        FaceObject(Player1)
+        SmallWait(3)
+        EndCutSceneMode()
+        StartDialogue("AWCassJ",Player1)
+        Continue()
+    END
+
+    //Play Effect
+IF
+    Global("AWCass-HandHubCutscene", "GLOBAL",3)
+    THEN
+    RESPONSE #100
+        CutsceneId("AWCass")
+        SetGlobal("AWCass-HandHubCutscene", "GLOBAL",4)
+        StartCutSceneMode()
+        SmallWait(4)
+        PlaySound("EFF_P70")
+        CreateVisualEffectObject("SPHOLY", "AWCass")
+        Wait(6)
+        EndCutSceneMode()
+        StartDialogue("AWCassJ",Player1)
+        Continue()
+    END
+
+
+IF
+    Global("AWCass-HandHubCutscene", "GLOBAL",1)
+    !Global("AWCass-HandHubCutsceneJoin", "GLOBAL",1)
+    THEN
+    RESPONSE #100
+        CutsceneId("AWCass")
+        SetGlobal("AWCass-HandHubCutscene", "GLOBAL",2)
+        StartCutSceneMode()
+        MoveToPoint([1225.1105])
+        MoveViewObject("AWCASS",VERY_FAST)
+        Wait(1)
+        Face(4)
+        SmallWait(3)
+        EndCutSceneMode()
+        StartDialogue("AWCassJ",Player1)
+        Continue()
+    END
+
+//Severed Hand Romance Cutscene
+//Severed Hand Romance
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR5404")
+    Global("AWCass-RomanceActive","GLOBAL",1)
+    !Global("AWCass-RomanceActive","GLOBAL",3)
+    Global("AWCass-HandRomTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-HandHubRomanceCutscene", "GLOBAL",1)
+    Continue()
+    END
+IF
+    Global("AWCass-HandHubRomanceCutscene", "GLOBAL",1)
+    THEN
+    RESPONSE #100
+        CutsceneId("AWCass")
+        SetGlobal("AWCass-HandHubRomanceCutscene", "GLOBAL",2)
+        StartCutSceneMode()
+        MoveToPoint([135.700])
+        ActionOverride(Player1,MoveToPoint([167.736]))
+        ActionOverride(Player1,MoveToPoint([167.736]))
+        Wait(3)
+        ActionOverride(Player1,FaceObject("AWCass"))
+        FaceObject(Player1)
+        SmallWait(3)
+        EndCutSceneMode()
+        SetGlobal("AWCass-HandRomTalk","GLOBAL",1)
+        StartDialogue("AWCassJ",Player1)
+        Continue()
+    END
+
+// HEART OF WINTER
+//Lonelywood
+
+IF
+    InParty(Myself)
+    See(Player1)
+    GlobalGT("Hjollder_Quest","GLOBAL",0)
+    CombatCounter(0)
+    AreaCheck("AR9100")
+    Global("AWCass-Lonelywood","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-Lonelywood","GLOBAL",1)
+    Continue()
+    END
+
+    IF
+        Global("AWCass-Lonelywood","GLOBAL",1)
+        GlobalGT("Hjollder_Quest","GLOBAL",3)
+    THEN
+    RESPONSE #100 
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END 
+
+//Burial Isle
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR9300")
+    Global("AWCass-BurialIsle","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-BurialIsle","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+        Global("AWCass-BurialIsle","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+END
+
+//Gloomfrost
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR9500")
+    Global("AWCass-Gloomfrost","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-Gloomfrost","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-Gloomfrost","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+END
+
+//Sea of Moving Ice
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR9600")
+    Global("AWCass-SeaOfIce","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-SeaOfIce","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-SeaOfIce","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+END
+
+//Icasaracht Slain
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR2109")
+    Global("HOW_COMPLETED","GLOBAL",1)
+    Global("AWCass-Icasaracht","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-Icasaracht","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-Icasaracht","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+END
+
+//Luremaster Watchknight Crypt
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR9713")
+    Global("AWCass-WatchknightCrypt","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-WatchknightCrypt","GLOBAL",1)
+    Continue()
+    END
+    
+    IF
+    Global("AWCass-WatchknightCrypt","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+END

@@ -1,0 +1,10 @@
+IF
+    Global("AWSpawnGnome", "GLOBAL", 0)
+    InParty("AWCass")
+THEN
+    RESPONSE #100
+        SetGlobal("AWSpawnGnome", "GLOBAL", 1)
+        // SetGlobal("AWCass-LordranisTalk","GLOBAL",1)
+        CreateCreatureImpassable("AWGnome", [1100.1210], SSW)
+        Continue()
+END

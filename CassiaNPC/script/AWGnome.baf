@@ -1,0 +1,17 @@
+IF
+    Global("HealGnomeScene", "GLOBAL", 2)
+THEN
+    RESPONSE #100
+        StartDialogue("AWGnome",Player1)
+        Continue()
+    END
+
+IF
+    Global("HealGnomeScene", "GLOBAL", 3)
+THEN
+    RESPONSE #100
+        AddExperienceParty(60000)
+        SetGlobal("HealGnomeScene", "GLOBAL", 4)
+        EscapeArea()
+        Continue()
+    END

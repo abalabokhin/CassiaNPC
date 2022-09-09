@@ -1,0 +1,8 @@
+IF
+    Global("AWSpawnCassia", "GLOBAL", 0)
+THEN
+    RESPONSE #100
+        SetGlobal("AWSpawnCassia", "GLOBAL", 1)
+        CreateCreatureImpassable("AWCass", [469.688], SSE)
+        Continue()
+END

@@ -1,0 +1,138 @@
+BACKUP ~CassiaNPC/Backup~
+AUTHOR ~Arvendor (habelteagle@gmail.com)~
+VERSION ~v1.0~
+
+AUTO_TRA ~CassiaNPC/tra/%s~
+
+LANGUAGE 
+    ~English~
+	  ~english~
+
+BEGIN ~Cassia NPC for Icewind Dale: Enhanced Edition~
+  REQUIRE_PREDICATE (GAME_IS ~iwdee~) ~This component must be installed on IWD:EE.~
+//State ids
+//APPEND ~racetext.2da~ ~TIEFLING   216        tiefling       -1         Tiefling          -1~ UNLESS ~TIEFLING~
+
+//APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+//UNLESS ~CD_STATE_NOTVALID~
+
+//Portrait
+COPY ~CassiaNPC/Portrait/AWCassS.bmp~ ~OVERRIDE~
+COPY ~CassiaNPC/Portrait/AWCassL.bmp~ ~OVERRIDE~
+
+// Dialogs
+COMPILE ~CassiaNPC/dialogue/AWCass.d~
+  USING ~CassiaNPC/tra/AWCass.tra~
+COMPILE ~CassiaNPC/dialogue/AWCassP.d~
+  USING ~CassiaNPC/tra/AWCassP.tra~
+COMPILE ~CassiaNPC/dialogue/AWCassJ.d~
+  USING ~CassiaNPC/tra/AWCassJ.tra~
+COMPILE ~CassiaNPC/dialogue/AWLord.d~
+  USING ~CassiaNPC/tra/AWLord.tra~
+COMPILE ~CassiaNPC/dialogue/AWGnome.d~
+  USING ~CassiaNPC/tra/AWGnome.tra~
+
+// Scripts
+EXTEND_TOP ~AR1000.bcs~ ~CassiaNPC/script/AR1000.baf~
+EXTEND_TOP ~AR7004.bcs~ ~CassiaNPC/script/AR7004.baf~
+EXTEND_TOP ~AR8004.bcs~ ~CassiaNPC/script/AR8004.baf~
+COMPILE ~AWCassS.bcs~ ~CassiaNPC/script/AWCassS.baf~
+COMPILE ~AWGnome.bcs~ ~CassiaNPC/script/AWGnome.baf~
+
+//Sound
+COPY ~CassiaNPC/audio~ ~OVERRIDE~
+
+//Creature
+COPY ~CassiaNPC/creature/AWCass.cre~ ~OVERRIDE~
+  SAY NAME1 "Cassia"
+  SAY NAME2 "Cassia"
+  WRITE_ASCII SCRIPT_OVERRIDE ~AWCASSS~
+  WRITE_ASCII DEATHVAR ~AWCASS~
+  WRITE_ASCII DIALOG ~AWCASS~
+  SAY BIO ~When you ask CASSIA about her past, she reveals that she hails from Mirabar, a great city built atop a dwarven settlement in the foothills of the Spine of the World. From what you can tell she was raised there by her mother and adoptive father as an only child, the latter of which introduced her to the faith. She proudly recounts her initiation in the Church of Helm and seems eager to her god, though she seems at times conflicted how to best do that.~
+  SAY MORALE ~They have the field this day!~ [awcas01]
+  SAY LEADER ~I will do my best to keep us out of harm's way.~ [awcas02]
+  SAY TIRED ~If I have to take another step, my feet will fall off.~ [awcas03]
+  SAY BORED ~I think I can feel mold growing on my feet.~ [awcas04]
+  SAY BATTLE_CRY1 ~Your time draws near.~ [awcas05]
+  SAY BATTLE_CRY2 ~Face me if you dare.~ [awcas06]
+  SAY BATTLE_CRY3 ~May the gods have mercy on you.~[awcas07]
+  SAY BATTLE_CRY4 ~Surrender!~ [awcas08]
+  SAY BATTLE_CRY5 ~I'll take care of this one!~ [awcas09]
+  SAY DAMAGE ~Oohh!~ [awcas10]
+  SAY DYING ~Aih! Uhh...~ [awcas11]
+  SAY HURT ~I don't want to die here...~ [awcas12]
+  SAY AREA_FOREST ~Stay on your guard. Who knows what manner of beast lurks in these woods.~
+  SAY AREA_CITY ~Step by step, the march of civilization carries onward. Splendid is it not?~
+  SAY AREA_DUNGEON ~Oh Vigilant One, God of Guardians and He Who is Unsleeping... grant me your sight within this twilight, that I might banish the horrors which call it home.~
+  SAY AREA_DAY ~The sun rises once more. Though in these times I find it almost blinding.~
+  SAY AREA_NIGHT ~The night closes in, but it shall not blind this servant of the Vigilant One.~
+  SAY SELECT_COMMON1 ~Something amiss?~ [awcas13]
+  SAY SELECT_COMMON2 ~I hear you.~ [awcas14]
+  SAY SELECT_COMMON3 ~Do you need me?~ [awcas15]
+  SAY SELECT_COMMON4 ~Name your task.~ [awcas16]
+  SAY SELECT_COMMON5 ~Can I help?~ [awcas17]
+  SAY SELECT_COMMON6 ~Yes?~ [awcas18]
+  SAY SELECT_ACTION1 ~Immediately.~ [awcas19]
+  SAY SELECT_ACTION2 ~Here?~ [awcas20]
+  SAY SELECT_ACTION3 ~I'll take care of it.~ [awcas21]
+  SAY SELECT_ACTION4 ~All right.~ [awcas22]
+  SAY SELECT_ACTION5 ~Well and good.~ [awcas23]
+  SAY SELECT_ACTION6 ~I'll do my best.~ [awcas24]
+  SAY SELECT_ACTION7 ~With all haste.~ [awcas25]
+  SAY SELECT_RARE1 ~Look, I'm *listening*, all right?~ [awcas26]
+  SAY SELECT_RARE2 ~You are making me mad on *so* many levels right now.~ [awcas27]
+  // SAY SELECT_RARE3 ~Look, I'm *listening*, all right?~
+  // SAY SELECT_RARE4 ~You are making me mad on *so* many levels right now.~
+  SAY CRITICAL_HIT ~Surrender!~ [awcas08]
+  SAY CRITICAL_MISS ~The battle turns against us!~ [awcas28]
+  SAY TARGET_IMMUNE ~What manner of devilry is this!?~
+  SAY INVENTORY_FULL ~I'm afraid I am taxed to my limits. I cannot carry that.~
+  SAY REACT_TO_DIE_GENERAL ~I shall light a candle for you.~ [awcas29]
+  SAY SPELL_DISRUPTED ~Ugh!~ [awcas30]
+
+COPY ~CassiaNPC/creature/AWLord.cre~ ~OVERRIDE~
+  SAY NAME1 "Sir Lordranis"
+  SAY NAME2 "Sir Lordranis"
+
+COPY ~CassiaNPC/creature/AWGnome.cre~ ~OVERRIDE~
+  SAY NAME1 "Exhausted Svirfneblin"
+  SAY NAME2 "Exhausted Svirfneblin"
+
+APPEND ~PDIALOG.2da~
+~AWCass AWCassP AWCassJ AWLord AWGnome~
+UNLESS ~AWCass~
+  /*
+APPEND ~PDIALOG.2da~
+  ~AWLord~
+UNLESS ~AWLord~
+*/
+COPY ~CassiaNPC/item/AWHELM.BAM~ ~override~
+COPY ~CassiaNPC/item/AWHELM.ITM~ ~override/AWringh.itm~
+SAY NAME1 ~Ring~
+SAY NAME2 ~Holy Symbol of Helm~
+SAY DESC ~Only the most worthy and devoted servants of the Watcher are granted these powerful holy symbols.
+
+STATISTICS:
+
+Equipped abilities:
+Strength: +1
+Magic Resistance: +5%
+Can memorize one extra 6th- and 7th-level Cleric spell
+
+Weight: 0~
+
+//Optional Component
+BEGIN ~Replace Healing Spells with copies that can affect Tieflings (recommended)?~
+COPY ~CassiaNPC/spell/sppr103.spl~ ~OVERRIDE~
+COPY ~CassiaNPC/spell/sppr217.spl~ ~OVERRIDE~
+COPY ~CassiaNPC/spell/sppr315.spl~ ~OVERRIDE~
+COPY ~CassiaNPC/spell/sppr401.spl~ ~OVERRIDE~
+COPY ~CassiaNPC/spell/sppr417.spl~ ~OVERRIDE~
+COPY ~CassiaNPC/spell/sppr502.spl~ ~OVERRIDE~
+COPY ~CassiaNPC/spell/sppr514.spl~ ~OVERRIDE~
+COPY ~CassiaNPC/spell/sppr607.spl~ ~OVERRIDE~
+COPY ~CassiaNPC/spell/sppr711.spl~ ~OVERRIDE~
+COPY ~CassiaNPC/spell/sppr713.spl~ ~OVERRIDE~
+
+

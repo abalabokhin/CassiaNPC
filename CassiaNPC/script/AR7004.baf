@@ -1,0 +1,10 @@
+IF
+    Global("AWSpawnLordranis", "GLOBAL", 0)
+    InParty("AWCass")
+THEN
+    RESPONSE #100
+        SetGlobal("AWSpawnLordranis", "GLOBAL", 1)
+        SetGlobal("AWCass-LordranisTalk","GLOBAL",1)
+        CreateCreatureImpassable("AWLord", [1369.1367], SSE)
+        Continue()
+END

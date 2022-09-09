@@ -1,0 +1,16 @@
+IF
+    True()
+  THEN
+    RESPONSE #100
+      CutsceneId("AWCass")
+      StartCutSceneMode()
+      // MoveToObject("AWGnome")
+      MoveViewObject("AWGnome",VERY_FAST)
+      Wait(1)
+      ForceSpell(Myself,CLERIC_HEAL)
+      SmallWait(5)
+      Wait(1)
+      EndCutSceneMode()
+      Continue()
+  END
+  

@@ -125,53 +125,79 @@ Weight: 0~
 ADD_JOURNAL @978  @979 USING ~CassiaNPC/tra/AWCassj.TRA~
 ADD_JOURNAL @32   @33 USING ~CassiaNPC/tra/AWLORD.TRA~
 
-
 //Optional Component (Not needed atm)
-//BEGIN ~Replace Healing Spells with copies that can affect Tieflings (recommended)?~
+BEGIN ~Replace Healing Spells with copies that can affect Tieflings (recommended)?~
 //COPY ~CassiaNPC/spell/sppr103.spl~ ~OVERRIDE~
-  /*
+  
   COPY_EXISTING ~sppr103.spl~ ~override/sppr103.spl~ 
     LPF DELETE_EFFECT 
       INT_VAR 
       match_parameter1 = 153
-  END*/
-    /*
-//COPY ~CassiaNPC/spell/sppr217.spl~ ~OVERRIDE~
+  END
   COPY_EXISTING ~sppr217.spl~ ~override/sppr217.spl~
-    DELETE_EFFECT INT_VAR match_parameter1 = 153
-    END
-//COPY ~CassiaNPC/spell/sppr315.spl~ ~OVERRIDE~
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END
   COPY_EXISTING ~sppr315.spl~ ~override/sppr315.spl~
-    DELETE_EFFECT INT_VAR match_parameter1 = 153
-    END
-//COPY ~CassiaNPC/spell/sppr401.spl~ ~OVERRIDE~
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END
   COPY_EXISTING ~sppr401.spl~ ~override/sppr401.spl~
-    DELETE_EFFECT INT_VAR match_parameter1 = 153
-    END
-//COPY ~CassiaNPC/spell/sppr417.spl~ ~OVERRIDE~
-  COPY_EXISTING ~spprsppr417103.spl~ ~override/sppr417.spl~
-    DELETE_EFFECT INT_VAR match_parameter1 = 153
-    END
-//COPY ~CassiaNPC/spell/sppr502.spl~ ~OVERRIDE~
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END
+  COPY_EXISTING ~sppr417.spl~ ~override/sppr417.spl~
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END
   COPY_EXISTING ~sppr502.spl~ ~override/sppr502.spl~
-    DELETE_EFFECT INT_VAR match_parameter1 = 153
-    END
-//COPY ~CassiaNPC/spell/sppr514.spl~ ~OVERRIDE~
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END
   COPY_EXISTING ~sppr514.spl~ ~override/sppr514.spl~
-    DELETE_EFFECT INT_VAR match_parameter1 = 153
-    END
-//COPY ~CassiaNPC/spell/sppr607.spl~ ~OVERRIDE~
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END
   COPY_EXISTING ~sppr607.spl~ ~override/sppr607.spl~
-    DELETE_EFFECT INT_VAR match_parameter1 = 153
-    END
-//COPY ~CassiaNPC/spell/sppr711.spl~ ~OVERRIDE~
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END
   COPY_EXISTING ~sppr711.spl~ ~override/sppr711.spl~
-    DELETE_EFFECT INT_VAR match_parameter1 = 153
-    END
-//COPY ~CassiaNPC/spell/sppr713.spl~ ~OVERRIDE~
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END
   COPY_EXISTING ~sppr713.spl~ ~override/sppr713.spl~
-    DELETE_EFFECT INT_VAR match_parameter1 = 153
-    END
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END
+  /*
+//COPY ~CassiaNPC/spell/sppr217.spl~ ~OVERRIDE~
+
+//COPY ~CassiaNPC/spell/sppr315.spl~ ~OVERRIDE~
+
+//COPY ~CassiaNPC/spell/sppr401.spl~ ~OVERRIDE~
+
+//COPY ~CassiaNPC/spell/sppr417.spl~ ~OVERRIDE~
+
+//COPY ~CassiaNPC/spell/sppr502.spl~ ~OVERRIDE~
+
+//COPY ~CassiaNPC/spell/sppr514.spl~ ~OVERRIDE~
+
+//COPY ~CassiaNPC/spell/sppr607.spl~ ~OVERRIDE~
+
+//COPY ~CassiaNPC/spell/sppr711.spl~ ~OVERRIDE~
+
+//COPY ~CassiaNPC/spell/sppr713.spl~ ~OVERRIDE~
+
 
 */
 

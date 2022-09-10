@@ -17,8 +17,8 @@ BEGIN ~Cassia NPC for Icewind Dale: Enhanced Edition~
 //UNLESS ~CD_STATE_NOTVALID~
 
 //Portrait
-COPY ~CassiaNPC/Portrait/AWCassS.bmp~ ~OVERRIDE~
-COPY ~CassiaNPC/Portrait/AWCassL.bmp~ ~OVERRIDE~
+COPY ~CassiaNPC/Portrait/AWCass_S.bmp~ ~OVERRIDE~
+COPY ~CassiaNPC/Portrait/AWCass_L.bmp~ ~OVERRIDE~
 
 // Dialogs
 COMPILE ~CassiaNPC/dialogue/AWCass.d~
@@ -44,8 +44,8 @@ COPY ~CassiaNPC/audio~ ~OVERRIDE~
 
 //Creature
 COPY ~CassiaNPC/creature/AWCass.cre~ ~OVERRIDE~
-  SAY NAME1 "Cassia"
-  SAY NAME2 "Cassia"
+  SAY NAME1 ~Cassia~
+  SAY NAME2 ~Cassia~
   WRITE_ASCII SCRIPT_OVERRIDE ~AWCASSS~
   WRITE_ASCII DEATHVAR ~AWCASS~
   WRITE_ASCII DIALOG ~AWCASS~
@@ -92,12 +92,12 @@ COPY ~CassiaNPC/creature/AWCass.cre~ ~OVERRIDE~
   SAY SPELL_DISRUPTED ~Ugh!~ [awcas30]
 
 COPY ~CassiaNPC/creature/AWLord.cre~ ~OVERRIDE~
-  SAY NAME1 "Sir Lordranis"
-  SAY NAME2 "Sir Lordranis"
+  SAY NAME1 ~Sir Lordranis~
+  SAY NAME2 ~Sir Lordranis~
 
 COPY ~CassiaNPC/creature/AWGnome.cre~ ~OVERRIDE~
-  SAY NAME1 "Exhausted Svirfneblin"
-  SAY NAME2 "Exhausted Svirfneblin"
+  SAY NAME1 ~Exhausted Svirfneblin~
+  SAY NAME2 ~Exhausted Svirfneblin~
 
 APPEND ~PDIALOG.2da~
 ~AWCass AWCassP AWCassJ AWLord AWGnome~
@@ -121,18 +121,57 @@ Magic Resistance: +5%
 Can memorize one extra 6th- and 7th-level Cleric spell
 
 Weight: 0~
+//Journal Entries ADD_JOURNAL @88	@89	@90	@91	@92	@93	@94	@95	@96	@97	@98	@99	@100	@101	@102	@103	@104	@105	@106	@107	@108	@109	@110	@111	@112 
+ADD_JOURNAL @978  @979 USING ~CassiaNPC/tra/AWCassj.TRA~
+ADD_JOURNAL @32   @33 USING ~CassiaNPC/tra/AWLORD.TRA~
 
-//Optional Component
-BEGIN ~Replace Healing Spells with copies that can affect Tieflings (recommended)?~
-COPY ~CassiaNPC/spell/sppr103.spl~ ~OVERRIDE~
-COPY ~CassiaNPC/spell/sppr217.spl~ ~OVERRIDE~
-COPY ~CassiaNPC/spell/sppr315.spl~ ~OVERRIDE~
-COPY ~CassiaNPC/spell/sppr401.spl~ ~OVERRIDE~
-COPY ~CassiaNPC/spell/sppr417.spl~ ~OVERRIDE~
-COPY ~CassiaNPC/spell/sppr502.spl~ ~OVERRIDE~
-COPY ~CassiaNPC/spell/sppr514.spl~ ~OVERRIDE~
-COPY ~CassiaNPC/spell/sppr607.spl~ ~OVERRIDE~
-COPY ~CassiaNPC/spell/sppr711.spl~ ~OVERRIDE~
-COPY ~CassiaNPC/spell/sppr713.spl~ ~OVERRIDE~
 
+//Optional Component (Not needed atm)
+//BEGIN ~Replace Healing Spells with copies that can affect Tieflings (recommended)?~
+//COPY ~CassiaNPC/spell/sppr103.spl~ ~OVERRIDE~
+  /*
+  COPY_EXISTING ~sppr103.spl~ ~override/sppr103.spl~ 
+    LPF DELETE_EFFECT 
+      INT_VAR 
+      match_parameter1 = 153
+  END*/
+    /*
+//COPY ~CassiaNPC/spell/sppr217.spl~ ~OVERRIDE~
+  COPY_EXISTING ~sppr217.spl~ ~override/sppr217.spl~
+    DELETE_EFFECT INT_VAR match_parameter1 = 153
+    END
+//COPY ~CassiaNPC/spell/sppr315.spl~ ~OVERRIDE~
+  COPY_EXISTING ~sppr315.spl~ ~override/sppr315.spl~
+    DELETE_EFFECT INT_VAR match_parameter1 = 153
+    END
+//COPY ~CassiaNPC/spell/sppr401.spl~ ~OVERRIDE~
+  COPY_EXISTING ~sppr401.spl~ ~override/sppr401.spl~
+    DELETE_EFFECT INT_VAR match_parameter1 = 153
+    END
+//COPY ~CassiaNPC/spell/sppr417.spl~ ~OVERRIDE~
+  COPY_EXISTING ~spprsppr417103.spl~ ~override/sppr417.spl~
+    DELETE_EFFECT INT_VAR match_parameter1 = 153
+    END
+//COPY ~CassiaNPC/spell/sppr502.spl~ ~OVERRIDE~
+  COPY_EXISTING ~sppr502.spl~ ~override/sppr502.spl~
+    DELETE_EFFECT INT_VAR match_parameter1 = 153
+    END
+//COPY ~CassiaNPC/spell/sppr514.spl~ ~OVERRIDE~
+  COPY_EXISTING ~sppr514.spl~ ~override/sppr514.spl~
+    DELETE_EFFECT INT_VAR match_parameter1 = 153
+    END
+//COPY ~CassiaNPC/spell/sppr607.spl~ ~OVERRIDE~
+  COPY_EXISTING ~sppr607.spl~ ~override/sppr607.spl~
+    DELETE_EFFECT INT_VAR match_parameter1 = 153
+    END
+//COPY ~CassiaNPC/spell/sppr711.spl~ ~OVERRIDE~
+  COPY_EXISTING ~sppr711.spl~ ~override/sppr711.spl~
+    DELETE_EFFECT INT_VAR match_parameter1 = 153
+    END
+//COPY ~CassiaNPC/spell/sppr713.spl~ ~OVERRIDE~
+  COPY_EXISTING ~sppr713.spl~ ~override/sppr713.spl~
+    DELETE_EFFECT INT_VAR match_parameter1 = 153
+    END
+
+*/
 

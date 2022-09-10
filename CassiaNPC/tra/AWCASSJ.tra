@@ -159,7 +159,7 @@
 @158 = ~Of course I will return home. I miss it dearly in fact.~
 @159 = ~Perhaps I will linger a while among the Ten Towns to see if something catches my eye.~
 @160 = ~You won't catch me spending a minute longer in this godsforsaken Dale than I must!~
-@161 = ~Hmm, that would entirely depend on the beautiful woman whose been travelling with me.~
+@161 = ~Hmm, that would entirely depend on the intriguing woman whose been travelling with me.~
 @162 = ~I don't know. I've not decided yet.~
 @163 = ~A toast to home then. And our good health.~
 @164 = ~Then I drink to your future adventures. And will pray for your good health.~
@@ -195,6 +195,7 @@
 @194 = ~These fanatics made their bed and I will openly condemn them for their mistakes. If I do not, then who will?~
 @195 = ~Leave me, <PLAYER1>. I've no wish to discuss this matter further at the moment. This defeat leaves an ashen taste in my mouth.~
 @196 = ~This may be a bad time but I wish to speak with you for a moment, <PLAYER1>. If you would be so kind as to spare a moment.~
+@1019 = ~Very well Cassia. What do you need?~
 @197 = ~What is it this time, Cassia?~
 @198 = ~I don't know, are you done stewing in your own bile?~
 @199 = ~No, I don't think I will. Nor will I in the future.~
@@ -328,7 +329,8 @@
 @327 = ~(She opens her eyes but remains seated, listening to her words echo throughout the empty halls of the Severed Hand. After a few moments and seemingly satisfied she snuffs the candle with a pinch of her fingers and returns both it and her holy symbol to her pack before rising to her feet.)~
 @328 = ~(While you cannot say whether Helm truly heard your companion's prayer. You certainly feel a touch more watched as you move on, though whether it truly is the attention of a god or simply the dead souls bound to this place you cannot say.)~
 @329 = ~By Helm, now that is what I call an inspiring view! It is a shame we so rarely get the oppertunity to appreciate the Dale's natural beauty but these moments more than make up for it.~
-@330 = ~I agree it is quite the view. But the vista is not the only beauty I see on display before me.~
+@330 = ~I agree it is quite the view. But the vista is not the only marvel before me~
+@1020 = ~I'd say some views can become a warm memory not because of what we see, but because with whom we can behold them.~ //credit, Lava del Vortel's line
 @331 = ~Now is probably a bad time to mention that I'm afraid of heights, isn't it.~
 @332 = ~Whew, all that climbing and fighting has made me rather thirsty. Can I offer you a drink?~
 @333 = ~Flatterer. Though you aren't so bad yourself. Ruggedly handsome is what I would call you in fact.~

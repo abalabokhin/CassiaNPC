@@ -12,6 +12,7 @@ IF
     !Race(Player1,HALFLING)
 	!Race(Player1,GNOME)
     CheckStatGT(Player1,9,CHR)
+    !Kit(Player1, GODTALOS) //No Talos Worshippers
     Global("AWCass-RomanceMatch","GLOBAL",0)
 THEN
     RESPONSE #100
@@ -39,6 +40,7 @@ IF
     Global("AWCass-RomanceActive","GLOBAL",1)
     Global("AWCass-RomanceActive","GLOBAL",2)
     Global("AWCass-FlirtStart","GLOBAL",0)
+    Global("AWCass-KuldaharMission","GLOBAL",2) //Only start flirting in Kuldahar
     THEN
     RESPONSE #100
     SetGlobal("AWCass-FlirtStart","GLOBAL",1)      

@@ -516,6 +516,7 @@ END
 ++ @197 + Cassia-ApologyTalk-1
 ++ @198 + Cassia-ApologyTalk-1
 ++ @199 + Cassia-ApologyTalk-2
+++ @1019 + Cassia-ApologyTalk-1
 
 CHAIN AWCassJ Cassia-ApologyTalk-1
 @200
@@ -845,6 +846,7 @@ END
 ++ @330 + Cassia-HandRomTalk-1
 ++ @331 + Cassia-HandRomTalk-2
 ++ @332 + Cassia-HandRomTalk-3
+++ @1020 + Cassia-HandRomTalk-1
 
 CHAIN AWCassJ Cassia-HandRomTalk-1
 @333

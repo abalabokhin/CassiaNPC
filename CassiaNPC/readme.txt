@@ -42,6 +42,7 @@ VERSION HISTORY:
 Version 1.01 Beta
 - Proper spell patching of healing spells implemented
 - Minor dialogue revisions
+- Minor portrait adjustment
 - Special intro dialogue for Priests of Talos implemented
 
 Version 1.00 Beta

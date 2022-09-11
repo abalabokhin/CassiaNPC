@@ -918,6 +918,32 @@ CHAIN AWCassJ Cassia-HandRomTalk-13
    DO ~SetGlobal("AWCass-RomanceActive","GLOBAL",2)~ EXIT
 
 //Insert backup Romance Talk in case GlobalLT("AWCass-HandRomTalk", "GLOBAL", 1) and romance is set to 1
+CHAIN IF WEIGHT #-1 ~Global("AWCass-CH4RomTalk","GLOBAL",1)~ THEN AWCassJ Cassia-CH4RomTalk
+@1025
+= @337
+= @338
+    DO ~IncrementGlobal("AWCass-CH4RomTalk", "GLOBAL", 1) SetGlobal("AWCass-HandRomTalk", "GLOBAL", 5)~
+END
+++ @339 + Cassia-CH4RomTalk-1
+++ @340 + Cassia-CH4RomTalk-2
+++ @1026 + Cassia-CH4RomTalk-3
+++ @342 + Cassia-HandRomTalk-8
+++ @343 + Cassia-HandRomTalk-8
+++ @344 + Cassia-HandRomTalk-8
+
+CHAIN AWCassJ Cassia-CH4RomTalk-1
+@347
+EXTERN AWCassJ Cassia-CH4RomTalk-3
+
+CHAIN AWCassJ Cassia-CH4RomTalk-2
+@348
+EXTERN AWCassJ Cassia-CH4RomTalk-3
+
+CHAIN AWCassJ Cassia-CH4RomTalk-3
+@350
+= @351
+= @352
+= @1024 DO ~SetGlobal("AWCass-RomanceActive","GLOBAL",2)~ EXIT
 
 //Upper Dorns Dwarf Talk
 CHAIN IF WEIGHT #-1 ~Global("AWCass-DwarfTalk","GLOBAL",1)~ THEN AWCassJ Cassia-DwarfTalk
@@ -1362,6 +1388,24 @@ CHAIN AWCassJ Cassia-FinalRomTalk-5
 EXIT
 
 //Add short 'wakeup' talk after sex
+CHAIN IF WEIGHT #-1 ~Global("AWCass-FinalRomTalk","GLOBAL",3)~ THEN AWCassJ Cassia-FinalRomTalk-6
+@1027
+    DO ~IncrementGlobal("AWCass-FinalRomTalk", "GLOBAL", 1)~
+END
+++ @1028 + Cassia-FinalRomTalk-7
+++ @1029 + Cassia-FinalRomTalk-8
+++ @1030 + Cassia-FinalRomTalk-9
+
+CHAIN AWCassJ Cassia-FinalRomTalk-7
+@1031 EXIT
+
+CHAIN AWCassJ Cassia-FinalRomTalk-8 //Obligatory Pathfinder:KM reference
+@1032
+= @1033 EXIT
+
+CHAIN AWCassJ Cassia-FinalRomTalk-9
+@1034
+= @1035 EXIT
 
 //HEART OF WINTER
 

@@ -336,7 +336,7 @@
 @333 = ~Flatterer. Though you aren't so bad yourself. Ruggedly handsome is what I would call you in fact.~
 @334 = ~If you want to I could hold you close. Keep you safe from falling off while we enjoy the view together.~
 @335 = ~I'd more than happy to share a toast with you to commemorate that climb. And perhaps I should reward you with a kiss for being so thoughtful, hmm?~
-@336 = ~Still, before we get carried away I would like to discuss this... well is it too early to call it us? You've shown an interest in me during our travels I think... and I must confess to having fallen for your charms, which has left me at a loss on how to proceed.~
+@336 = ~Still, before we get carried away I would like to discuss 'us'... well is it too early to call it us? You've shown an interest in me during our travels I think... and I must confess to having fallen for your charms, which has left me at a loss on how to proceed.~
 @337 = ~I did not venture to the Dale expecting to find someone who would grow so close to my heart. Even now I am unsure whether I can even allow myself to become distracted in such a manner. There is so much at risk and the stakes of our success seem to spiral to greater heights by the day, I just don't know if I can justify putting it all at risk over my own selfish desires.~
 @338 = ~That being said, I do confess to holding deeper feelings for you, <PLAYER1>. I have found you to be a pillar of strength and support in our travels throughout the Dale and I have always had a thing for men with integrity. I cannot promise things will end happily. Adventuring is a dangerous business after all and for all I know a stray spell or arrow my claim my life tomorrow. But until that happens, I am willing to see where this relationship might take us.~
 @339 = ~As am I. I care about you, Cassia.~
@@ -1025,3 +1025,16 @@ We found the last of the surviving Watchknights who once traveled with Cassia tr
 @1016 = ~You look happy, <PLAYER1>. Did something good happen?~
 @1017 = ~We can speculate on a number of reasons how that might have happened but I can say with certainty that no true child of Moradin would ever deign to sell their treasured artifacts to orcs!~
 @1018 = ~Then you are as naive as we were. What other explanation could there have possibly been for this betrayal?~
+@1024 = ~Whatever comes next, we face it together <PLAYER1>.~
+@1025 = ~Hold a moment, <PLAYER1>. Before we continue I- I would like to discuss 'us' before we tread any further... Is it too early to call it us? You've shown an interest in me during our travels I think... and I must confess to having fallen for your charms, which has left me at a loss on how to proceed.~
+@1026 = ~I knew you'd come around eventually. Come here.~
+@1027 = ~Good morning, my love. You look so peaceful when you sleep (giggles).~
+@1028 = ~Good morning to you too. Did you rest well?~
+@1029 = ~Mhh, I had a wonderful dream last night...~
+@1030 = ~(Groan) just a few more minutes...~
+@1031 = ~My hair is a mess, I ache all over and I'm pretty sure I've misplaced my left gauntlet. (She grins) But I wouldn't have it any other way.~
+@1032 = ~(She snickers) The tail makes everything better, doesn't it?~
+@1033 = ~Come along then, <PLAYER1>. We've still a battle ahead of us and if you don't start moving soon I'll go fetch some snow from outside.~
+@1034 = ~(She playfully brushes a strand of hair out of your face and places a kiss on your forehead.)~
+@1035 = ~One final battle <PLAYER1>. And after that I'll let you crawl back under those blankets if you want. And probably join you as well, if it pleases you.~    
+    //@1036 is next

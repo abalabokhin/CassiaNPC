@@ -5,14 +5,14 @@
 //Global("AWCass-RomanceActive","GLOBAL",0)
 //Global("AWCass-FlirtedWith", "GLOBAL", 1)~
 
-//Restrict Romance for Male Chars with 10+ CHA. No Gnomes or Halflings.
+//Restrict Romance for Male Chars with 10+ CHA. No Gnomes or Halflings. No Talos Worshippers.
 IF
     InParty(Myself)
     Gender(Player1,MALE)
     !Race(Player1,HALFLING)
 	!Race(Player1,GNOME)
     CheckStatGT(Player1,9,CHR)
-    !Kit(Player1, GODTALOS) //No Talos Worshippers
+    !Kit(Player1, GODTALOS) 
     Global("AWCass-RomanceMatch","GLOBAL",0)
 THEN
     RESPONSE #100
@@ -89,15 +89,6 @@ IF
         RestParty()
         Continue()
     END
-
-//////////////////////////////
-////Alignment Tracker
-//////////////////////////////
-//Global("AWCass-ShiftToGood","GLOBAL",0)
-//Certain Dialogues increment this Variable. If the Variable is at least 3 during the Alignment Shift Dialogue in Lower Dorn's, the shift can occur and Cassia becomes Lawful Good.
-//ChangeAlignment(LastSeenBy(Myself),CHAOTIC_GOOD)
-
-
 
 //////////////////////////////
 ////MAIN Dialogue Tree
@@ -589,6 +580,21 @@ IF
     StartDialogue("AWCassJ",Player1)
     Continue()
     END
+// Wakeup After 
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    PartyRested()
+    Global("AWCass-RomanceActive","GLOBAL",2)
+    Global("AWCass-FinalRomTalk","GLOBAL",2)
+    Global("AWCass-RomanticRest","GLOBAL",2)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-FinalRomTalk","GLOBAL",3)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
+    END
 
 // Svirfneblin Cutscene
 IF
@@ -704,6 +710,7 @@ IF
     CombatCounter(0)
     AreaCheck("AR5404")
     Global("AWCass-RomanceActive","GLOBAL",1)
+    !Global("AWCass-RomanceActive","GLOBAL",2) //No committed relationship yet
     !Global("AWCass-RomanceActive","GLOBAL",3)
     Global("AWCass-HandRomTalk","GLOBAL",0)
     THEN
@@ -729,6 +736,23 @@ IF
         SetGlobal("AWCass-HandRomTalk","GLOBAL",1)
         StartDialogue("AWCassJ",Player1)
         Continue()
+    END
+
+//Upper Dorn's Deep Backup Talk
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR6000")
+    Global("AWCass-RomanceActive","GLOBAL",1)  //Is romancing
+    !Global("AWCass-RomanceActive","GLOBAL",3) //No breakup
+    !Global("AWCass-RomanceActive","GLOBAL",2) //No committed relationship yet
+    Global("AWCass-CH4RomTalk","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-CH4RomTalk", "GLOBAL",1)
+    StartDialogue("AWCassJ",Player1)
+    Continue()
     END
 
 //Lower Dorn's Tower Romance Cutscene

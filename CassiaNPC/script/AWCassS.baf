@@ -921,3 +921,28 @@ IF
     StartDialogue("AWCassJ",Player1)
     Continue()
 END
+
+//CROSSMOD
+IF
+    InParty(Myself)
+    InParty("L#DENDJELION")
+    !StateCheck("L#DENDJELION",CD_STATE_NOTVALID)
+    !StateCheck("AWCass",CD_STATE_NOTVALID)
+    OR(2)
+     Dead("O#HOLVIR")
+     Dead("L#NOON")
+    OR(2)
+     Global("C0HolvirDendjelionConflict","GLOBAL",3)
+     Global("L#NoonBringHim","GLOBAL",6)
+    Global("AWCassWontAcceptSlaughter","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCassWontAcceptSlaughter","GLOBAL",1)
+    END
+    
+    IF
+    Global("AWCassWontAcceptSlaughter","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    StartDialogueNoSet(Player1)
+    END

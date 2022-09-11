@@ -1708,6 +1708,13 @@ CHAIN AWCassJ Cassia-WatchknightCrypt-8
 @653
 = @654 EXIT
 
+//CROSSMOD
+
+//NOON OR HOLVIR KILLED
+
+CHAIN IF WEIGHT #-5 ~Global("AWCassWontAcceptSlaughter","GLOBAL",1)~ THEN AWCassJ CASS.REACTIONTODEADPAL.00
+@1036
+DO ~LeaveParty() SetGlobal("AWCassWontAcceptSlaughter","GLOBAL",2) ApplySpell(Myself,HELM_SEEKING_SWORD) Enemy() Attack("L#DENDJELION")~ EXIT
 
 
 //INTERJECTIONS

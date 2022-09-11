@@ -39,6 +39,10 @@ Thank you for trying out my mod!
 
 VERSION HISTORY:
 
+Version 1.02 Beta
+- Fixed final romance talk scripting
+- Overhauled Lower Dorns romance talk
+
 Version 1.01 Beta
 - Proper spell patching of healing spells implemented
 - Minor dialogue revisions
@@ -46,4 +50,4 @@ Version 1.01 Beta
 - Special intro dialogue for Priests of Talos implemented
 
 Version 1.00 Beta
-- Initial Mod release
+- Initial Mod version

@@ -917,6 +917,8 @@ CHAIN AWCassJ Cassia-HandRomTalk-13
 = @362
    DO ~SetGlobal("AWCass-RomanceActive","GLOBAL",2)~ EXIT
 
+//Insert backup Romance Talk in case GlobalLT("AWCass-HandRomTalk", "GLOBAL", 1) and romance is set to 1
+
 //Upper Dorns Dwarf Talk
 CHAIN IF WEIGHT #-1 ~Global("AWCass-DwarfTalk","GLOBAL",1)~ THEN AWCassJ Cassia-DwarfTalk
 @363
@@ -1143,118 +1145,136 @@ EXIT
 //Guard Tower Romance Talk
 CHAIN IF WEIGHT #-1 ~Global("AWCass-TowerRomTalk","GLOBAL",1)~ THEN AWCassJ Cassia-TowerRomTalk
 @455
+= @456
     DO ~IncrementGlobal("AWCass-TowerRomTalk", "GLOBAL", 1)~
 END
-++ @456 + Cassia-TowerRomTalk-1
-++ @457 + Cassia-TowerRomTalk-2
-++ @458 + Cassia-TowerRomTalk-1
+++ @457 + Cassia-TowerRomTalk-1
+++ @458 + Cassia-TowerRomTalk-2
+++ @459 + Cassia-TowerRomTalk-1
 
 CHAIN AWCassJ Cassia-TowerRomTalk-1
-@459
-EXTERN AWCassJ Cassia-TowerRomTalk-3
+@460 EXIT
+//EXTERN AWCassJ Cassia-TowerRomTalk-3
 
 CHAIN AWCassJ Cassia-TowerRomTalk-2
-@460
-EXTERN AWCassJ Cassia-TowerRomTalk-3
-
-CHAIN AWCassJ Cassia-TowerRomTalk-3
-@461
+@461 EXIT
+//EXTERN AWCassJ Cassia-TowerRomTalk-3
+    
+CHAIN IF WEIGHT #-1 ~Global("AWCass-TowerRomTalk","GLOBAL",2)~ THEN AWCassJ Cassia-TowerRomTalk-3
+@462
+= @463 DO ~IncrementGlobal("AWCass-TowerRomTalk", "GLOBAL", 1)~
 END
-++ @462 + Cassia-TowerRomTalk-6
-++ @463 + Cassia-TowerRomTalk-6
-++ @464 + Cassia-TowerRomTalk-5
+++ @464 + Cassia-TowerRomTalk-6
+++ @465 + Cassia-TowerRomTalk-6
+++ @466 + Cassia-TowerRomTalk-5
 
 CHAIN AWCassJ Cassia-TowerRomTalk-4
 @465
 EXTERN AWCassJ Cassia-TowerRomTalk-5
 
 CHAIN AWCassJ Cassia-TowerRomTalk-5
-@466
-= @467 EXIT
+@467 EXIT
 
 CHAIN AWCassJ Cassia-TowerRomTalk-6
 @468
-= @469
 END
-+ ~CheckStatLT(LastTalkedToBy,18,DEX)~ + @470 + Cassia-TowerRomTalk-9// NA
-+ ~CheckStatGT(LastTalkedToBy,17,DEX)~ + @470 + Cassia-TowerRomTalk-10//High Dex
+++ @469 + Cassia-TowerRomTalk-7
+++ @470 + Cassia-TowerRomTalk-7
 ++ @471 + Cassia-TowerRomTalk-7
-++ @472 + Cassia-TowerRomTalk-4
 
 CHAIN AWCassJ Cassia-TowerRomTalk-7
-@473
+@472
+= @473
+= @474
 END
-+ ~CheckStatLT(LastTalkedToBy,18,DEX)~ + @474 + Cassia-TowerRomTalk-9// NA
-+ ~CheckStatGT(LastTalkedToBy,17,DEX)~ + @474 + Cassia-TowerRomTalk-10//High Dex
 ++ @475 + Cassia-TowerRomTalk-8
-++ @476 + Cassia-TowerRomTalk-4
+++ @476 + Cassia-TowerRomTalk-9
+++ @477 + Cassia-TowerRomTalk-10
 
 CHAIN AWCassJ Cassia-TowerRomTalk-8
-@477
-END 
-+ ~CheckStatLT(LastTalkedToBy,18,DEX)~ + @478 + Cassia-TowerRomTalk-9// NA
-+ ~CheckStatGT(LastTalkedToBy,17,DEX)~ + @478 + Cassia-TowerRomTalk-10//High Dex
-+ ~CheckStatLT(LastTalkedToBy,18,DEX)~ + @479 + Cassia-TowerRomTalk-9 // NA
-+ ~CheckStatGT(LastTalkedToBy,17,DEX)~ + @479 + Cassia-TowerRomTalk-10 //High Dex
-++ @480 + Cassia-TowerRomTalk-4
+@478
+EXTERN AWCassJ Cassia-TowerRomTalk-11
 
 CHAIN AWCassJ Cassia-TowerRomTalk-9
-@481
-= @482
+@479
 EXTERN AWCassJ Cassia-TowerRomTalk-11
 
 CHAIN AWCassJ Cassia-TowerRomTalk-10
-@483
-= @484
+@480
 EXTERN AWCassJ Cassia-TowerRomTalk-11
 
 CHAIN AWCassJ Cassia-TowerRomTalk-11
-@485
-END
-++ @486 + Cassia-TowerRomTalk-12
-++ @487 + Cassia-TowerRomTalk-12
-++ @488 + Cassia-TowerRomTalk-12
+@481
+END 
+++ @482 + Cassia-TowerRomTalk-12
+++ @483 + Cassia-TowerRomTalk-13
+++ @484 + Cassia-TowerRomTalk-14
++ ~GlobalGT("AWCass-LordranisTalk", "GLOBAL", 1)~ + @485 + Cassia-TowerRomTalk-15
+++ @486 + Cassia-TowerRomTalk-13
 
 CHAIN AWCassJ Cassia-TowerRomTalk-12
-@489
-= @490
-= @491
-END
-++ @492 + Cassia-TowerRomTalk-13
-++ @493 + Cassia-TowerRomTalk-14
-++ @494 + Cassia-TowerRomTalk-15
+@487
+EXTERN AWCassJ Cassia-TowerRomTalk-17
 
 CHAIN AWCassJ Cassia-TowerRomTalk-13
-@495
-EXTERN AWCassJ Cassia-TowerRomTalk-16
+@489
+= @1024
+EXTERN AWCassJ Cassia-TowerRomTalk-17
 
 CHAIN AWCassJ Cassia-TowerRomTalk-14
-@496
-EXTERN AWCassJ Cassia-TowerRomTalk-16
+@488
+EXTERN AWCassJ Cassia-TowerRomTalk-17
 
-CHAIN AWCassJ Cassia-TowerRomTalk-15  
-@497
-EXTERN AWCassJ Cassia-TowerRomTalk-16
-
-CHAIN AWCassJ Cassia-TowerRomTalk-16
-@498
-END
-++ @499 + Cassia-TowerRomTalk-17
-++ @500 + Cassia-TowerRomTalk-17
-++ @501 + Cassia-TowerRomTalk-18
+CHAIN AWCassJ Cassia-TowerRomTalk-15
+@490
+EXTERN AWCassJ Cassia-TowerRomTalk-17
 
 CHAIN AWCassJ Cassia-TowerRomTalk-17
-@502
-EXTERN AWCassJ Cassia-TowerRomTalk-19
+@491
+= @492
+END
+++ @493 + Cassia-TowerRomTalk-18
+++ @494 + Cassia-TowerRomTalk-19
+++ @495 + Cassia-TowerRomTalk-20
 
 CHAIN AWCassJ Cassia-TowerRomTalk-18
-@503
-EXTERN AWCassJ Cassia-TowerRomTalk-19
+@496
+EXTERN AWCassJ Cassia-TowerRomTalk-21
 
 CHAIN AWCassJ Cassia-TowerRomTalk-19
-@504
-= @505
-= @506 EXIT
+@497
+EXTERN AWCassJ Cassia-TowerRomTalk-21
+
+CHAIN AWCassJ Cassia-TowerRomTalk-20
+@498
+EXTERN AWCassJ Cassia-TowerRomTalk-21
+
+CHAIN AWCassJ Cassia-TowerRomTalk-21
+@499
+= @500
+END
+++ @501 + Cassia-TowerRomTalk-22
+++ @502 + Cassia-TowerRomTalk-23
+++ @503 + Cassia-TowerRomTalk-24
+++ @504 + Cassia-TowerRomTalk-5
+
+CHAIN AWCassJ Cassia-TowerRomTalk-22
+@505
+EXTERN AWCassJ Cassia-TowerRomTalk-25
+
+CHAIN AWCassJ Cassia-TowerRomTalk-23
+@506
+EXTERN AWCassJ Cassia-TowerRomTalk-25
+
+CHAIN AWCassJ Cassia-TowerRomTalk-24  
+@1022
+EXTERN AWCassJ Cassia-TowerRomTalk-26
+
+CHAIN AWCassJ Cassia-TowerRomTalk-25
+@1021 EXIT
+
+CHAIN AWCassJ Cassia-TowerRomTalk-26
+@1023 EXIT
 
 //Final Boss Talk (Rewrite and expand this) // CREATE ROMANCE and Non-Friendship Alternate
 CHAIN IF WEIGHT #-1 ~Global("AWCass-FinalBossTalk","GLOBAL",1)~ THEN AWCassJ Cassia-FinalBossTalk
@@ -1340,6 +1360,8 @@ CHAIN AWCassJ Cassia-FinalRomTalk-5
 = @542
     DO ~SetGlobal("AWCass-RomanticRest", "GLOBAL", 1)~
 EXIT
+
+//Add short 'wakeup' talk after sex
 
 //HEART OF WINTER
 

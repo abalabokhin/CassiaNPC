@@ -124,6 +124,7 @@ COPY ~CassiaNPC/creature/AWGnome.cre~ ~OVERRIDE~
 APPEND ~PDIALOG.2da~
 ~AWCass AWCassP AWCassJ AWLord AWGnome~
 UNLESS ~AWCass~
+APPEND ~interdia.2da~ ~AWCass AWCassB AWCassB~ UNLESS ~AWCass~
   /*
 APPEND ~PDIALOG.2da~
   ~AWLord~

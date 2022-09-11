@@ -80,25 +80,13 @@ IF
     Continue()
     END
 
-//ENSURE REST CUTSCENE FIRES
 IF
     InParty(Myself)
     Global("AWCass-RomanticRest", "GLOBAL", 1)
     THEN
     RESPONSE #100
         SetGlobal("AWCass-RomanticRest","GLOBAL",2)
-        CutSceneId(Player1)
-        StorePartyLocations()
-        FadeToColor([30.0],0)
-        Wait(1)
-        StartMovie("restinn")
-        AdvanceTime(2400) 
-        ActionOverride(Player1,Rest())
-        ActionOverride(Player2,Rest())
-        ActionOverride(Player3,Rest())
-        ActionOverride(Player4,Rest())
-        ActionOverride(Player5,Rest())
-        ActionOverride(Player6,Rest())
+        RestParty()
         Continue()
     END
 
@@ -739,6 +727,37 @@ IF
         SmallWait(3)
         EndCutSceneMode()
         SetGlobal("AWCass-HandRomTalk","GLOBAL",1)
+        StartDialogue("AWCassJ",Player1)
+        Continue()
+    END
+
+//Lower Dorn's Tower Romance Cutscene
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    Global("AWCass-RomanceActive","GLOBAL",2)
+    !Global("AWCass-RomanceActive","GLOBAL",3)
+    Global("AWCass-TowerRomTalk","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCass-TowerRomCutscene", "GLOBAL",1)
+    Continue()
+    END
+IF
+    Global("AWCass-TowerRomCutscene", "GLOBAL",1)
+    THEN
+    RESPONSE #100
+        CutsceneId("AWCass")
+        SetGlobal("AWCass-TowerRomCutscene", "GLOBAL",2)
+        StartCutSceneMode()
+        MoveToPoint([170.330])
+        ActionOverride(Player1,MoveToPoint([200.320]))
+        Wait(3)
+        ActionOverride(Player1,FaceObject("AWCass"))
+        FaceObject(Player1)
+        SmallWait(3)
+        EndCutSceneMode()
         StartDialogue("AWCassJ",Player1)
         Continue()
     END

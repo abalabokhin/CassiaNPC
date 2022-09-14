@@ -22,9 +22,9 @@ Cure Medium Wounds		- sppr315.spl
 Cure Serious Wounds		- sppr401.spl
 Lesser Restoration		- sppr417.spl
 Cure Critical Wounds	- sppr502.spl
-Mass Cure Light Wounds	- sppr514.spl
-Heal					- sppr607.spl
-Regeneration			- sppr711.spl
+Mass Cure Light Wounds- sppr514.spl
+Heal					        - sppr607.spl
+Regeneration			    - sppr711.spl
 Greater Restoration		- sppr713.spl
 
 CREDITS:

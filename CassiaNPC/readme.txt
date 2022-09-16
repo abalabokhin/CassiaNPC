@@ -16,16 +16,16 @@ As an optional sub-component, you are given the option to modify the existing he
 
 The list of the modified spells are as follows:
 
-Cure Light Wounds 		- sppr103.spl
-Cure Moderate Wounds	- sppr217.spl
-Cure Medium Wounds		- sppr315.spl
-Cure Serious Wounds		- sppr401.spl
-Lesser Restoration		- sppr417.spl
-Cure Critical Wounds	- sppr502.spl
-Mass Cure Light Wounds	- sppr514.spl
-Heal					- sppr607.spl
-Regeneration			- sppr711.spl
-Greater Restoration		- sppr713.spl
+Cure Light Wounds - sppr103.spl
+Cure Moderate Wounds  - sppr217.spl
+Cure Medium Wounds  - sppr315.spl
+Cure Serious Wounds - sppr401.spl
+Lesser Restoration  - sppr417.spl
+Cure Critical Wounds  - sppr502.spl
+Mass Cure Light Wounds  - sppr514.spl
+Heal  - sppr607.spl
+Regeneration  - sppr711.spl
+Greater Restoration - sppr713.spl
 
 CREDITS:
 Mod Author: Arvendor

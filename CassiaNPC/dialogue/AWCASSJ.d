@@ -1786,12 +1786,14 @@ I_C_T DLYSANPR 18 AWCassLYSANPR
 == AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @672
 END
 
-//Presio
+//Presio Fix Enemy() scripting issue; Should work now
 I_C_T DUNDLT2 0 AWCassPRESIO0
 == AWCassJ @675
+== DUNDLT2 @1037
 END
 I_C_T DUNDLT2 1 AWCassPRESIO1
 == AWCassJ @675
+== DUNDLT2 @1037
 END
 
 //Yxonumei

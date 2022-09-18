@@ -923,6 +923,8 @@ IF
 END
 
 //CROSSMOD
+
+//If Dendjelion kills a Paladin
 IF
     InParty(Myself)
     InParty("L#DENDJELION")
@@ -945,4 +947,68 @@ IF
     THEN
     RESPONSE #100
     StartDialogueNoSet(Player1)
+    END
+
+//Skineater Area Dialog
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("l#TS10")
+    Dead("l#tswbon") //Woodland Bones slain at entrance
+    Global("AWCassSkineaterAreaReact","GLOBAL",0)
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCassSkineaterAreaReact","GLOBAL",1)
+    END
+    
+    IF
+    Global("AWCassSkineaterAreaReact","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    END
+
+//Skineater Ellianh Slain
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("AR2100")
+    Dead("l#tsstar") //Ellianh
+    Global("AWCassELLIANHDEAD","GLOBAL",0)
+    Global("L#TSStart","GLOBAL",5) //Party found out about Elianh's true nature and he attacked
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCassELLIANHDEAD","GLOBAL",1)
+    END
+    
+    IF
+    Global("AWCassELLIANHDEAD","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
+    END
+
+//Snowytoes Yondalla Shield
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    AreaCheck("l#HA01")
+    Global("AWCassYONDALLASHIELD","GLOBAL",0)
+    PartyHasItem("l#hasym")
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCassYONDALLASHIELD","GLOBAL",1)
+    END
+    
+    IF
+    Global("AWCassYONDALLASHIELD","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("AWCassJ",Player1)
     END

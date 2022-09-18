@@ -1,6 +1,6 @@
 ==> CASSIA NPC FOR IWD:EE
 ==> Mod by Arvendor
-==> Version 1.01 Beta
+==> Version 1.03 Beta
 
 INTRODUCTION:
 
@@ -31,6 +31,7 @@ CREDITS:
 Mod Author: Arvendor
 Artist of Cassia's portrait: Takeda11 (Tomasz Chistowski, https://www.deviantart.com/takeda11)
 Feedback and Testing: LavaDelVortel
+Proofreading: Brokenkatana
 Special Thanks: LavaDelVortel and TheArtisan for their wonderful NPC mods which inspired this one.
 
 Cassia NPC mod for IWDEE by Arvendor is not developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay Entertainment Corp., or the Wizards of the Coast. All other trademarks and copyrights are property of their respective owners, including images. This mod is made by an IWD/BG fan for other fans. 
@@ -38,6 +39,11 @@ Cassia NPC mod for IWDEE by Arvendor is not developed, supported, or endorsed by
 Thank you for trying out my mod!
 
 VERSION HISTORY:
+
+Version 1.03 Beta
+- Added crossmod talk for Snowytoes and Skineater Areas
+- Added Nym Interjection
+- Fixed Presio aggro bug which would turn Cassia hostile
 
 Version 1.02 Beta
 - Fixed final romance talk scripting

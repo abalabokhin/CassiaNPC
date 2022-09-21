@@ -37,7 +37,7 @@
 @36  = ~I agree, but it seems he is giving us little choice in the matter.~
 @37  = ~I was tasked with aiding the caravan which is now destroyed, if I need to remind you of that. Who is left to carry out this mission I ask you?~
 @38  = ~I am not whining! I am merely trying to be realistic about the situation.~
-@39  = ~The druid is expecting things from our group which are far beyond our capabilities. We do not have the manpower or experience to field a proper campaign. We are underequipped, lack any information on what precisely we are dealing with and our enemy has already proven more than ready for us!~
+@39  = ~The druid is expecting things from our group which are far beyond our capabilities. We do not have the manpower or experience to field a proper campaign. We are under equipped, lack any information on what precisely we are dealing with and our enemy has already proven more than ready for us!~
 @40  = ~What we should be doing is fortifying the town as best we can until we can send a missive outside the Dale requesting aid. If we are lucky the passes should eventually thaw and then...~
 @41  = ~Cassia, listen to me. You need to pull yourself together. Yes things are looking bad now, but it lies in our power to change that.~
 @42  = ~Look, I agree that the task at hand can seem monumental but that doesn't mean we can't at least make the attempt.~
@@ -62,7 +62,7 @@
 @61  = ~Of course. No doubt the threat lurking in this 'Vale' will provide a welcome distraction and allow us the oppertunity to do some good.~
 @62  = ~Ech, I think I am beginning to reach a newfound disdain for these undead monstrosities. The dead should be the ones watched over by the living and have no business wandering about in this state of false life!~
 @63  = ~Does Helm have any specific stance on the undead or is this a personal issue?~
-@64  = ~I agree. If the gods are willing we shall purge these rotten cadavres from this Vale for good!~
+@64  = ~I agree. If the gods are willing we shall purge these rotten cadavers from this Vale for good!~
 @65  = ~I don't know, their unique qualities can make for effective guards that never tire nor rest.~
 @66  = ~You know you are rather cute when you are worked up like this. Puts some colour in your cheeks.~
 @67  = ~In the eyes of the Great Guard, puppeteering the remains of the dead is seen as an abhorrence. Wherever these creatures spring up, we Helmites are encouraged to seek their destruction swiftly and without mercy. It matters little how they came to be, only that they are returned to their final rest.~
@@ -149,7 +149,7 @@
 @148 = ~(Cassia shrugs and takes a sip of her Frost Wine.)~
 @149 = ~I'll... try my best.~
 @150 = ~I'll admit, sometimes you scare me <PLAYER1>. I keep asking myself if you're really going to see all this through or if you will just cut your losses one morning and run at the first opportunity.~
-@151 = ~I've thought about it. But considering what we've encountered so far in the passes I think I'll take my chances here with you, rather than out there on my own.~
+@151 = ~I've thought about it. But considering what we've encountered so far in the passes, I think I'll take my chances here with you, rather than out there on my own.~
 @152 = ~What do you take me for, some sort of coward? I won't leave this stinking Dale until I see the heads roll of the ones that inconvenienced me!~
 @153 = ~Yeah, don't get used to it. You might spare yourself the disappointment.~
 @154 = ~I know this might not mean much to you, but I am glad you are here with us. Without your skills I don't know how far we might have gotten.~
@@ -217,7 +217,7 @@
 @215 = ~Sometimes I wonder why you are so hard on yourself, Cassia. And I accept your apology by the way.~
 @216 = ~My comment was not intended to offend you. You really need to learn how to relax if something as harmless as that can set you off.~
 @217 = ~Fine, be that way. If that's all you have to say for yourself, fall back in line.~
-@218 = ~And how precicely would I do that? Wouldn't that sort of behaviour lead to me making more mistakes?~
+@218 = ~And how precisely would I do that? Wouldn't that sort of behaviour lead to me making more mistakes?~
 @219 = ~Maybe, but we wouldn't know until you try won't we?~
 @220 = ~I don't think so. I sense you've got a good heart in you, Cassia. You just have to give it space to breathe.~
 @221 = ~Well if you're looking for pointers on where to get started I know this lovely place back in Kuldahar...~
@@ -335,10 +335,10 @@
 @332 = ~Whew, all that climbing and fighting has made me rather thirsty. Can I offer you a drink?~
 @333 = ~Flatterer. Though you aren't so bad yourself. Ruggedly handsome is what I would call you in fact.~
 @334 = ~If you want to I could hold you close. Keep you safe from falling off while we enjoy the view together.~
-@335 = ~I'd more than happy to share a toast with you to commemorate that climb. And perhaps I should reward you with a kiss for being so thoughtful, hmm?~
+@335 = ~I'd be more than happy to share a toast with you to commemorate that climb. And perhaps I should reward you with a kiss for being so thoughtful, hmm?~
 @336 = ~Still, before we get carried away I would like to discuss 'us'... well is it too early to call it us? You've shown an interest in me during our travels I think... and I must confess to having fallen for your charms, which has left me at a loss on how to proceed.~
 @337 = ~I did not venture to the Dale expecting to find someone who would grow so close to my heart. Even now I am unsure whether I can even allow myself to become distracted in such a manner. There is so much at risk and the stakes of our success seem to spiral to greater heights by the day, I just don't know if I can justify putting it all at risk over my own selfish desires.~
-@338 = ~That being said, I do confess to holding deeper feelings for you, <PLAYER1>. I have found you to be a pillar of strength and support in our travels throughout the Dale and I have always had a thing for men with integrity. I cannot promise things will end happily. Adventuring is a dangerous business after all and for all I know a stray spell or arrow my claim my life tomorrow. But until that happens, I am willing to see where this relationship might take us.~
+@338 = ~That being said, I do confess to holding deeper feelings for you, <PLAYER1>. I have found you to be a pillar of strength and support in our travels throughout the Dale and I have always had a thing for men with integrity. I cannot promise things will end happily. Adventuring is a dangerous business after all and for all I know a stray spell or arrow may claim my life tomorrow. But until that happens, I am willing to see where this relationship might take us.~
 @339 = ~As am I. I care about you, Cassia.~
 @340 = ~So long as I live I won't let any harm befall you, Cassia. I love you.~
 @341 = ~You do know that I only heard half of what you said just now. It is terribly windy up here you know? And there's this beautiful Tiefling that kept distracting me.~
@@ -428,7 +428,7 @@
 @425 = ~I hope this isn't your way of proposing in a roundabout way.~
 @426 = ~I'm sure they would be delighted to meet you. It will certainly make them feel a lot older, seeing their little girl bringing home the thief of her heart.~
 @427 = ~Don't worry. I think they'll approve of you. And if not I'll be sure to make a convincing case to them on your behalf.~
-@428 = ~(She blushes) Goodness no, I don't think I'd even be ready for such a commitment. It is still much to early for me and I wouldn't want to ruin it by rushing things ahead.~
+@428 = ~(She blushes) Goodness no, I don't think I'd even be ready for such a commitment. It is still much to early for me and I wouldn't want to ruin it by rushing into things.~
 @429 = ~But let us leave these thoughts for a different time and venture on. It was, as always, a pleasure to speak to you and hear your thoughts, <PLAYER1>.~
 @430 = ~It is good to see that there remains yet one place which has remained free of the hateful evil which has taken root in these mines. These deep gnomes must be crafty individuals indeed to have protected this place for so long.~
 @431 = ~It is a travesty what has been done to their people. Their enslavement has been most cruel.~
@@ -448,7 +448,7 @@
 @445 = ~Whatever retrubution you seek to deal must come secondary to caring for the victims of this atrocity. It is they who require your aid, first and foremost.~
 @446 = ~If that is what you feel is necessary I will not stop you. Just don't lose your head while you're at it.~
 @447 = ~(She clenches her fist tightly but you notice her red eyes soften as she surveys the injured and fearful gnomes which scurry about the town.)~
-@448 = ~I have often wondered in my duty if I was perhaps being inconsiderate of the individual. Helm's tenets demand vigilance and obedience to the letter of the law and it is at times all to easy to forget the victims current circumstances in favour of seeing their aggressor punished.~
+@448 = ~I have often wondered in my duty if I was perhaps being inconsiderate of the individual. Helm's tenets demand vigilance and obedience to the letter of the law and it is at times all to easy to forget the victims current circumstances in favor of seeing their aggressor punished.~
 @449 = ~Do you think I should help them? Take some time during our rest here to tend to their wounded and sick? Would it even make a difference in the grand scheme of things?~
 @450 = ~It will matter to them. I am sure they will never forget that sort of kindness.~
 @451 = ~Probably not. Better you save your strength for the coming confrontations.~
@@ -462,7 +462,7 @@
 @459 = ~We've not the time to linger here. Our enemies might send a patrol at any moment to come looking for us.~
 @460 = ~In a moment. I think I have dented piece of plate digging itself into one of my ribs.~
 @461 = ~Good thing we are near a forge. There have to be some things lying around here we can use as spare materials.~
-@462 = ~(As you make yourselves comfortable on one of the beds, Cassia sits herself down beside you and removing her gauntlets begins to fumble for the buckles which secure her breastplate before she pauses and glances at you briefly.)~
+@462 = ~(As you make yourselves comfortable on one of the beds, Cassia sits herself down beside you, removing her gauntlets before she begins to fumble for the buckles which secure her breastplate. She pauses and glances at you briefly.)~
 @463 = ~You don't mind if I remove my armor do you? It should be safe enough for the moment and it would help speed my repairs but if it makes you uncomfortable...~
 @464 = ~Actually that's a splendid idea. I'm sweating like a pig myself.~
 @465 = ~Go ahead. I'll keep mine on I think but I won't stop you.~
@@ -499,8 +499,8 @@
 @495 = ~Despite all the terrible things that have happened, I am glad that I was able to meet you and have you by my side.~
 @496 = ~(She pauses in her ministrations as she accepts your waterskin, drinking greedily from it as she tilts her head back before handing it back to you with a grateful smile.)~
 @497 = ~Then we will simply have to do this again. I will place no conditions on tending to those I care about, my love.~
-@498 = ~As am I. It's terrible, you know? I shouldn't be looking for silver linings or trying to rationalise the crimes that were committed here with our meeting. The slaves of this place care not if I tell them what a wonderful and caring person you are to me.~ 
-@499 = ~When I first realised I had feelings for you I tried to bury them. Lock them away where they wouldn't interfere with the mission. I was afraid they would somehow compromise myself or my ability to perform my duty to Helm and those that lost their lives on the doomed expedition. But you showed me that I didn't have to hide them at all, that I am able to express myself and be stronger for it.~
+@498 = ~As am I. It's terrible, you know? I shouldn't be looking for silver linings or trying to rationalize the crimes that were committed here with our meeting. The slaves of this place care not if I tell them what a wonderful and caring person you are to me.~ 
+@499 = ~When I first realized I had feelings for you I tried to bury them. Lock them away where they wouldn't interfere with the mission. I was afraid they would somehow compromise myself or my ability to perform my duty to Helm and those that lost their lives on the doomed expedition. But you showed me that I didn't have to hide them at all, that I am able to express myself and be stronger for it.~
 @500 = ~(She leans against you with a sigh as her tail coils itself around your waist and along your leg. Outside of her armor she appears almost vulnerable, but despite this she seems fully relaxed by your presence.)~
 @501 = ~(Hug her close.)~
 @502 = ~(Lean in for a kiss.)~
@@ -547,7 +547,7 @@
 @540 = ~Lead on then, <PLAYER1>. And may Helm protect us in the coming struggle.~
 @541 = ~(She suddenly steps forward and embraces you, silencing you with a heated kiss as one of her hands begin to unfasten the buckle of your belt.)~
 @542 = ~Shhh, no more words. For now let us see if we can't get you out of these clothes...~
-@543 = ~So, the barbarian's are posed to once again to stage a campaign against the Ten Towns. Hardly a surprising development given the history of the region but no less troubling. If the clans are truly posed to unite they could become a force that would overrun the Ten Towns.~
+@543 = ~So, the barbarian's are posed to once again to stage a campaign against the Ten Towns. Hardly a surprising development given the history of the region but no less troubling. If the clans are truly poised to unite they could become a force that would overrun the Ten Towns.~
 @544 = ~Again? This has happened before?~
 @545 = ~If Hjollder believes that we will find a way to stop this conflict and that is what I intend to do.~
 @546 = ~Perhaps it is their right then. These are their ancestral lands after all.~
@@ -600,7 +600,7 @@
 @593 = ~(Snickers) You're terrible sometimes, you know that?~
 @594 = ~How do you do it? To keep pushing through these hardships as we travel from one depressing corner of the Dale to the next? There is a certain obligation to duty, yes, but it seems a cold comfort by itself.~
 @595 = ~I try to keep the innocent people of the Dale in mind. It is for their happiness and safety that I do this.~
-@596 = ~If I didn't keep pushing I'd be the one being pushed. I'm not one to take the easy path.~
+@596 = ~If I didn't keep pushing, I'd be the one being pushed. I'm not one to take the easy path.~
 @597 = ~We press on because if we don't, nobody else will. The Ten Towns and the Barbarian tribes alike are depending on our success.~
 @598 = ~Whatever the nature of the creature that is impersonating Wylfdene it has humiliated and insulted me. I will see it dead for this sleight.~
 @599 = ~Sometimes I feel the same, but what choice do we have?~
@@ -641,7 +641,7 @@
 @634 = ~(Snickers) Your avarice is truly insatiable at times <PLAYER1>. I'll admit, I was also surprised by it's absence.~
 @635 = ~But right now the only treasure I care about is you.~
 @636 = ~It is likely that Icasaracht cared for little but her own vengeance in the end. A cautionary tale for us all if we let it consume us as it did her.~
-@637 = ~What a mournful sight it is to see this place in ruins. Once it served as an oasis for travellers and adventurers alike within these wastes. And now it has fallen to ruin, overtaken by the desert sands it once kept at bay.~
+@637 = ~What a mournful sight it is to see this place in ruins. Once it served as an oasis for travelers and adventurers alike within these wastes. And now it has fallen to ruin, overtaken by the desert sands it once kept at bay.~
 @638 = ~Without people to shelter this place has lost it's purpose.~
 @639 = ~Such is the ebb and flow of civilization. People build great works but they all fall eventually.~
 @640 = ~I don't see why you're so upset, it's just some walls and old brickwork.~
@@ -660,7 +660,7 @@
 @653 = ~Whatever force has brought us here, it seems intent on telling us their story. And maybe it hopes we in turn will carry that same story with us to the world beyond these walls so that it no longer languishes forgotten.~
 @654 = ~Ah, but I have wasted enough time pontificating. Let us see what the lower crypts have in store for us.~
 @655 = ~It must have been a great honor to be chosen to guard this sacred site, High Priest.~
-@656 = ~What cause did you have to do that <PLAYER1>? Was it not enough to lie to him that you also felt the need to relieve him of his posessions!~
+@656 = ~What cause did you have to do that <PLAYER1>? Was it not enough to lie to him that you also felt the need to relieve him of his possessions!~
 @657 = ~Have no fear good sir, we shall get to the bottom of this witchcraft, won't we <PLAYER1>?~
 @658 = ~The woman in your dreams was a sea spirit, Jhonen. I drove her away; she shouldn't be bothering you anymore.~
 @659 = ~The woman in your dreams is a sea spirit, Jhonen. Her kind speak through song, which is why you couldn't understand her.~
@@ -734,7 +734,7 @@
 @727 = ~There, much better. Wouldn't want it getting caught on anything in the thick of battle after all.~
 @728 = ~You look ready to collapse <PLAYER1>. While I admire your drive to keep going it will not do for our enemies to catch you in this state.~
 @729 = ~With Helm as my witness, so long as I live I won't allow our foes to overtake you <PLAYER1>.~
-@730 = ~(Cassia regards you with a warmly, a coy smile playing on her lips. It seems she has made you the center of her attention as of late.)~
+@730 = ~(Cassia regards you with a warmly, coy smile playing on her lips. It seems she has made you the center of her attention as of late.)~
 @731 = ~(Her eyes shamelessly drink in every nook and cranny of your being as she bites her lip blushing.)~
 @732 = ~Forgive me <PLAYER1>, it appears my thoughts have strayed once again.~
 @733 = ~(As she walks beside you you can feel her hand snake around your waist protectively, pulling herself closer as she leans against you.)~
@@ -760,7 +760,7 @@
 @753 = ~(You feel her hand carelessly toying with the buckle of your belt as she kisses you. After what feels like an agonizing eternity she pulls away with an flushed yet impish expression.)~
 @754 = ~I do not know if Helm intended for us to find each other. But I thank him nonetheless every time I see your smile.~
 @755 = ~My love, you really need to take better care of yourself. Here, let me heal you.~
-@756 = ~(Cassia takes a moment to brush the snow from your shoulders but her hands seem to become distracted as you soon find her massaging your tense muscles.)~
+@756 = ~(Cassia takes a moment to brush the snow from your shoulders, but her hands seem to become distracted as you soon find her massaging your tense muscles.)~
 @757 = ~My, you are tense today <PLAYER1>. I wonder why...~
 @758 = ~(Cassia approaches you from behind and gives your cloak with a firm tug to straighten it out before turning you around and planting a kiss on your cheek.)~
 @759 = ~There. Now you are ready to impress me once again with your heroism.~
@@ -790,7 +790,7 @@
 @783 = ~This pit breeds nothing but suffering and madness. It is a good thing we are here to cleanse it.~
 @784 = ~We must hurry and uncover Arundel's murderer as quickly as possible. I fear a great calamity will befall us all should we fail.~
 @785 = ~At least we have the Heartstone Gem and a lead to someone who can use it. Let us pray this 'Larrel' will be willing to aid us.~
-@786 = ~The dwarves chose their location for this stronghold well. Without Larrel's aid we could have spent months scouring the mountainside looking for the entrance. I wonder how long it took the goblins and orks to find this place?~
+@786 = ~The dwarves chose their location for this stronghold well. Without Larrel's aid we could have spent months scouring the mountainside looking for the entrance. I wonder how long it took the goblins and orcs to find this place?~
 @787 = ~I know it sounds silly considering the temperatures here, but aren't you also nervous the palace of ice will just... melt?~
 @788 = ~This place is worse than Dragon Eye! I feel like I'm being slowly cooked alive inside my armor.~
 @789 = ~I also don't think I've ever seen a host compromised of so many different creatures. What manner of being could compel Salamanders, Orogs, Giants and Drow to work together? All under the banner of 'Ilmater' of all things! I do not like this one bit <PLAYER1>.~
@@ -993,7 +993,7 @@ We found the last of the surviving Watchknights who once traveled with Cassia tr
 @984 = ~Knowing the nature of my work I highly doubt that. Though if you are volunteering...~
 @985 = ~Oh I'm just 'so' glad to have your approval missy.~
 @986 = ~Perhaps, though not a day goes by where I do not pray to Ilmater for the Mother's safe return.~
-@987 = ~Your god has no business involving himself here, Helmite. And I will not tolerate your inpudent posturing within these hallowed halls of Myrkul.~
+@987 = ~Your god has no business involving himself here, Helmite. And I will not tolerate your impudent posturing within these hallowed halls of Myrkul.~
 @988 = ~I do not know but I beseech you to release my kin from their suffering.~
 @989 = ~I am sure the fool couldn't have gotten far. And you'd better find him if you want the information I am offering.~
 @990 = ~Then that is where we shall seek refuge. I thank you again for bringing us the key to our freedom!~
@@ -1039,7 +1039,7 @@ We found the last of the surviving Watchknights who once traveled with Cassia tr
 @1035 = ~One final battle <PLAYER1>. And after that I'll let you crawl back under those blankets if you want. And probably join you as well, if it pleases you.~    
 @1036 = ~You'd let that halfling just kill whoever he wants and get away with it? No, I cannot accept this, <PLAYER1>. I won't stand by and watch this injustice unfold. The two of you—you deserve each other.~
 @1037 = ~Your skull shall make a fitting offering for my mistress.~   //@1036 is next
-@1038 = ~I hope there's a special place in the hells just waiting for you, murderer.~
+@1038 =~I hope there's a special place in the hells just waiting for you, murderer.~
 @1039 = ~By Helm that tortured thing looked even more unseemly than I was expecting! What manner of twisted monstrosity flays it's victims in such a fashion but leaves both sinew and muscle intact?~
 @1040 = ~Whatever it is, we'll put an end to it.~
 @1041 = ~You aren't squeamish are you? You look a bit green.~

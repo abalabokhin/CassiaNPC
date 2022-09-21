@@ -497,6 +497,7 @@ IF
     See(Player1)
     CombatCounter(0)
     AreaCheck("AR8004")
+    See("AWGnome") //Only trigger if comes into sight of Exhausted Svirfneblin
     Global("AWCass-GnomeTownTalk","GLOBAL",0)
     THEN
     RESPONSE #100

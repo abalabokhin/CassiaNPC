@@ -1013,3 +1013,80 @@ IF
     MoveToObject(Player1)
     StartDialogue("AWCassJ",Player1)
     END
+
+//Kuldahar Revisited, Cursed Cat
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    Global("AWCassKULDAHARCAT","GLOBAL",0)
+    Global("L#KUIDontWannaBeBuried","GLOBAL",2) 
+    !GlobalTimerExpired("L#KUCATCONTINUES","GLOBAL")
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCassKULDAHARCAT","GLOBAL",1)
+    END
+    
+    IF
+    Global("AWCassKULDAHARCAT","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    StartDialogue("AWCassJ",Player1)
+    END
+
+//Kuldahar Revisited, Jeweller
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    Global("AWCassKULDAHARJEWELLER","GLOBAL",0)
+    AreaCheck("L#KU15")
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCassKULDAHARJEWELLER","GLOBAL",1)
+    END
+    
+    IF
+    Global("AWCassKULDAHARJEWELLER","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    StartDialogue("AWCassJ",Player1)
+    END
+
+//Our Lady Dreamless, Pond Entered
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    Global("AWCassLADYPOND","GLOBAL",0)
+    AreaCheck("L#UF12")
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCassLADYPOND","GLOBAL",1)
+    END
+    
+    IF
+    Global("AWCassLADYPOND","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    StartDialogue("AWCassJ",Player1)
+    END
+
+//Below and Below Inn, Chest Aquired
+IF
+    InParty(Myself)
+    See(Player1)
+    CombatCounter(0)
+    Global("AWCassBELOWCHEST","GLOBAL",0)
+    PartyHasItem
+    THEN
+    RESPONSE #100
+    SetGlobal("AWCassBELOWCHEST","GLOBAL",1)
+    END
+    
+    IF
+    Global("AWCassBELOWCHEST","GLOBAL",1)
+    THEN
+    RESPONSE #100
+    StartDialogue("AWCassJ",Player1)
+    END

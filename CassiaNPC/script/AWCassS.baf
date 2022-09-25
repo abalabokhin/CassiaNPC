@@ -1078,7 +1078,7 @@ IF
     See(Player1)
     CombatCounter(0)
     Global("AWCassBELOWCHEST","GLOBAL",0)
-    PartyHasItem
+    PartyHasItem("l#bbches")
     THEN
     RESPONSE #100
     SetGlobal("AWCassBELOWCHEST","GLOBAL",1)

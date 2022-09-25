@@ -1844,7 +1844,7 @@ END
 CHAIN AWCassJ CASS.REACTIONTOJEWELLER.08
 @1085
 = @1086
-DO ~TakePartyGold(7) DestroyGold(7) GiveItemCreate("RING11",AWCass,1,0,0)~
+DO ~TakePartyGold(7) DestroyGold(7) GiveItemCreate("RING11","AWCass",1,0,0)~
 END 
 ++ @1087 + CASS.REACTIONTOJEWELLER.10
 ++ @1088 + CASS.REACTIONTOJEWELLER.09

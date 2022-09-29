@@ -1,6 +1,6 @@
 ==> CASSIA NPC FOR IWD:EE
 ==> Mod by Arvendor
-==> Version 1.03 Beta
+==> Version 1.04 Beta
 
 INTRODUCTION:
 
@@ -39,6 +39,9 @@ Cassia NPC mod for IWDEE by Arvendor is not developed, supported, or endorsed by
 Thank you for trying out my mod!
 
 VERSION HISTORY:
+
+Version 1.04 Beta
+- Added crossmod talks for Rediscovery of Kuldahar, Lady Dreamless and Below & Below Inn
 
 Version 1.03 Beta
 - Added crossmod talk for Snowytoes and Skineater Areas

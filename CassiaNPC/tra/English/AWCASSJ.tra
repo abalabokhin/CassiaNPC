@@ -6,11 +6,11 @@
 @5   = ~You words are kind but unnecessary. It will not do for me to cling to the wishful hope that they may return.~
 @6   = ~I do and it puts me ill at ease. A retinue of Watchknights are not an insurmountable force by any means but still a considerable one.~
 @7   = ~I do not believe that. Watchknight Lordranis is a dedicated man of faith and his men would not so readily abandon the cause the Great Guard tasked them with.~
-@8   = ~I must now come to terms with the fact that I will likely be the sole member of my retinue joining the caravan. I dearly wish the circumstances were different and that Helm may yet speed the safe return, but the expedition cannot afford further delays at this point.~
+@8   = ~I must now come to terms with the fact that I will likely be the sole member of my retinue joining the caravan. I dearly wish the circumstances were different and that Helm may yet speed their safe return, but the expedition cannot afford further delays at this point.~
 @9   = ~You are not alone. Many others are just as ready to lend our aid to the cause.~
 @10  = ~A concerning development to be sure but there's nothing we can do about it now.~
 @11  = ~It kind of looks like they abandoned you, you know?~
-@12  = ~You are right of course, <PLAYER1>. I shouldn't forget that you and many other rightous individuals have pledged themselves to the cause, regardless of the circumstance which may have brought you here.~
+@12  = ~You are right of course, <PLAYER1>. I shouldn't forget that you and many other righteous individuals have pledged themselves to the cause, regardless of the circumstance which may have brought you here.~
 @13  = ~I cannot afford to let doubts darken my thoughts at this point. Helm is now counting on me more than ever to do my duty in the other's absence. And I shall do so to the best of my abilities.~
 @14  = ~I- suppose it would look like that. I was after all the junior member of the group. Perhaps the others felt I was unprepared for such an dangerous mission and felt it would be best to leave me behind.~
 @15  = ~The past week of solitude has certainly been an adjustment for me. Since growing up in Mirabar I have always been surrounded by members of the faith. Now that their absence has had time to sink in, I find myself missing their support, regardless of the circumstances which may have caused it.~
@@ -59,7 +59,7 @@
 @58  = ~But come now. As I understand it we have a haunted Vale to cleanse and an evil to root out. Perhaps this will prove a welcome distraction for the both of us.~
 @59  = ~You are far too kind for your own good you know? When will you have time to vent your troubles if you are stuck listening to me?~
 @60  = ~But... I am warmed by your words, <PLAYER1>. Thank you.~
-@61  = ~Of course. No doubt the threat lurking in this 'Vale' will provide a welcome distraction and allow us the oppertunity to do some good.~
+@61  = ~Of course. No doubt the threat lurking in this 'Vale' will provide a welcome distraction and allow us the opportunity to do some good.~
 @62  = ~Ech, I think I am beginning to reach a newfound disdain for these undead monstrosities. The dead should be the ones watched over by the living and have no business wandering about in this state of false life!~
 @63  = ~Does Helm have any specific stance on the undead or is this a personal issue?~
 @64  = ~I agree. If the gods are willing we shall purge these rotten cadavers from this Vale for good!~
@@ -102,7 +102,7 @@
 @101 = ~Were you ever sent on a military campaign as part of your training.~
 @102 = ~Right, next time please warn me before you try and bore me to death with another tale of yours.~
 @103 = ~Was there anything else you wished to ask?~
-@104 = ~Was your heritage ever have an affect on your training?~
+@104 = ~Did your heritage ever have an affect on your training?~
 @105 = ~There fortunately weren't any large scale engagements during my training but I did accompany a war party of paladins who were tasked with hunting down pockets of orcs which were preying on merchants and caravans which travelled the roads to and from Mirabar. I was kept away from most of the fighting but it was a... formative experience.~
 @106 = ~I only saw their encampment from afar as my brothers and sisters set fire to it. But the stench of blood and ash carried itself far atop the winds. It was grim work that needed to be done in order to ensure the orcs received a strong message not to return to prey on the innocents on the road.~
 @107 = ~Not as much as you might think. My adoptive father was a veteran man of the faith as well and commanded some respect among the following in Mirabar. There were some who stared or whispered behind my back of course. But I was fortunate to make a few good friends among my peers who were supportive and kind to me, despite their friend sprouting horns and having a tail which would occasionally get caught in a door.~
@@ -218,7 +218,7 @@
 @216 = ~My comment was not intended to offend you. You really need to learn how to relax if something as harmless as that can set you off.~
 @217 = ~Fine, be that way. If that's all you have to say for yourself, fall back in line.~
 @218 = ~And how precisely would I do that? Wouldn't that sort of behaviour lead to me making more mistakes?~
-@219 = ~Maybe, but we wouldn't know until you try won't we?~
+@219 = ~Maybe, but we wouldn't know until you try, would we?~
 @220 = ~I don't think so. I sense you've got a good heart in you, Cassia. You just have to give it space to breathe.~
 @221 = ~Well if you're looking for pointers on where to get started I know this lovely place back in Kuldahar...~
 @222 = ~Yeah, maybe you're right. Best to stick with what works best for you.~
@@ -267,7 +267,7 @@
 @265 = ~Perhaps it is for the best. Such a powerful tool is all to easily misused, even by those with the best intentions.~
 @266 = ~No, and I dare not try. Perhaps if something catastrophic were to occur I could petition the Great Guard for aid. But I fear such a course of action would not only be dangerous but also do me irreperable harm, if it doesn't fail outright.~
 @267 = ~I do not believe that would have worked. Even from here I can feel the immense power radiating off of the gem, even in its dormant state.~
-@268 = ~Still, we are left with the question with what happens next. No doubt we have slain one of the evils that was plaguing Kuldahar. But there are still loose ends aren't there?~
+@268 = ~Still, we are left with the question of what happens next. No doubt we have slain one of the evils that was plaguing Kuldahar. But there are still loose ends aren't there?~
 @269 = ~This buildup of troops must have had a purpose beyond guarding this place. Clearly there is something more going on.~
 @270 = ~It would certainly seem so, but I'll be damned if I knew what it could be.~
 @271 = ~Whatever it is, it could hardly be any more challenging than breaching this place.~
@@ -297,7 +297,7 @@
 @295 = ~Hold, <PLAYER1>. Do not let the apparent calm here deceive you. I sense we are being watched by a great many spirits.~
 @296 = ~Spirits? I don't see any spirits.~
 @297 = ~Dare I ask what they are doing?~
-@298 = ~This place is a grave and every level brings a new flavour dead it seems.~
+@298 = ~This place is a grave and every level brings a new flavour of dead it seems.~
 @299 = ~I wouldn't expect you to. If it were not for the Vigilant One's blessing of sight they would have likely escaped my notice as well.~
 @300 = ~I think they are waiting for something... or someone. They are difficult enough to see as it is, even with the aided sight of Helm.~
 @301 = ~But these feel different than the reanimated bones and shambling corpses we have fought so far. It almost feels as though these spectres 'should' be alive and yet they are clearly not.~
@@ -325,7 +325,7 @@
 @323 = ~(Putting away her weapon she kneels down on the cracked stone floor. From her pack she produces both her holy symbol, a plain wax candle and a small phial of holy water.)~
 @324 = ~(Carefully she places the items before her, first removing her gauntlets and anointing her hands with the holy water. Then she lights the candle with a snap from her fingers conjuring a spark. Finally she reaches for her holy symbol, grasping it with both her hands as she brings it to rest in her lap.)~
 @325 = ~(For a moment she watches the candle burn, her lips moving almost imperceptively in the flickering light as they form soundless words. Then the lids of her eyes begin to close and the words she speaks begin to take manifest sound.)~
-@326 = ~Helm, God of Guardians, you who's Eyes are unsleeping. Your faithful servant begs you in this hour to lend your gaze to the cursed elven souls which haunt this long forgotten ruin. Let them feel your presence and know that their suffering has not been forgotten by the gods. Let them know, that their vigil will not last forever and that they too will one day look upon the celestial fields of Arvandor.~
+@326 = ~Helm, God of Guardians, you whose Eyes are unsleeping. Your faithful servant begs you in this hour to lend your gaze to the cursed elven souls which haunt this long forgotten ruin. Let them feel your presence and know that their suffering has not been forgotten by the gods. Let them know, that their vigil will not last forever and that they too will one day look upon the celestial fields of Arvandor.~
 @327 = ~(She opens her eyes but remains seated, listening to her words echo throughout the empty halls of the Severed Hand. After a few moments and seemingly satisfied she snuffs the candle with a pinch of her fingers and returns both it and her holy symbol to her pack before rising to her feet.)~
 @328 = ~(While you cannot say whether Helm truly heard your companion's prayer. You certainly feel a touch more watched as you move on, though whether it truly is the attention of a god or simply the dead souls bound to this place you cannot say.)~
 @329 = ~By Helm, now that is what I call an inspiring view! It is a shame we so rarely get the oppertunity to appreciate the Dale's natural beauty but these moments more than make up for it.~
@@ -370,7 +370,7 @@
 @367 = ~I'm sorry, but are you upset about some ruined stonework?~
 @368 = ~Such mindless destruction and for what? Must there always be creatures that are posessed by such an uncontrollable urge to destroy?~
 @369 = ~What did you expect? The beasts did not come to this place to conquer. They came to destroy. And once their goal was accomplished they likely scattered back to their holes in the mountains, if infighting over the spoils did not tear them apart.~
-@370 = ~It is not just about the stonework but rather what this place represents as a whole. A once a prosperous and secure community, now reduced to a shadowy skeleton to be picked dry by carrion feeders. As someone who has dedicated themselves to the safeguarding of the northern towns and communities, few things are as upsetting as witnessing the decayed state this ruin now finds itself in and to think of what it once had been.~
+@370 = ~It is not just about the stonework but rather what this place represents as a whole. A once prosperous and secure community, now reduced to a shadowy skeleton to be picked dry by carrion feeders. As someone who has dedicated themselves to the safeguarding of the northern towns and communities, few things are as upsetting as witnessing the decayed state this ruin now finds itself in and to think of what it once had been.~
 @371 = ~The dwarves could still reclaim it in the future you know. Many great things have been burnt to ash only to be rebuilt.~
 @372 = ~Do you worry the same fate might befall Kuldahar?~
 @373 = ~It is the way of the world. Old things must crumble to make way for the new.~
@@ -469,7 +469,7 @@
 @466 = ~No, I don't think this is a good idea. We need to keep moving while we still can.~
 @467 = ~Aye, right you are <PLAYER1>. Let me finish patching up my armor quickly and then we can be underway.~
 @468 = ~(Cassia slides out of her armor and gambeson, turning around to face you as she places the breastplate on her lap. As she is inspecting the puncturing damage her armor sustained you realize that her white, worn undershirt is completely drenched with sweat and leaves very little to your imagination.)~
-@469 = ~Uhm, Cassia you're shirt...~
+@469 = ~Uhm, Cassia your shirt...~
 @470 = ~You know you're quite the looker under all that armor.~
 @471 = ~(Politely cough and look away.)~
 @472 = ~What? Oh dear! Let me just...~
@@ -534,7 +534,7 @@
 @527 = ~You are tense.~
 @528 = ~(She nods and from her body language you can tell that something is bothering her. She shifts from foot to foot, her eyes avoiding yours yet lingering unusually long on the rest of you.)~
 @529 = ~I... forgive me but at the precipe of battle I find my thoughts in disarray, not least of all because of you.~
-@530 = ~We have fought and bled together througout our journey through the dale. From the frozen mountain peaks to the fiery pits of this region we have travelled, conquering our foes and slaying evil wherever it opposed us. It has been an adventure that will remain in my memory for a lifetime, and I wouldn't have it any other way.~
+@530 = ~We have fought and bled together throughout our journey through the dale. From the frozen mountain peaks to the fiery pits of this region we have travelled, conquering our foes and slaying evil wherever it opposed us. It has been an adventure that will remain in my memory for a lifetime, and I wouldn't have it any other way.~
 @531 = ~And yet on the eve of battle I find my mind is consumed by the fear of what may happen and do not wish to live with the regrets of feelings unexpressed.~
 @532 = ~I love you <PLAYER1>, and I worry that mere words do not do my feelings justice. I would ask of you to stay the night with me, that we might take comfort in each other's company while we still can.~
 @533 = ~Cassia I... are you sure this is the right time?~
@@ -547,7 +547,7 @@
 @540 = ~Lead on then, <PLAYER1>. And may Helm protect us in the coming struggle.~
 @541 = ~(She suddenly steps forward and embraces you, silencing you with a heated kiss as one of her hands begin to unfasten the buckle of your belt.)~
 @542 = ~Shhh, no more words. For now let us see if we can't get you out of these clothes...~
-@543 = ~So, the barbarian's are posed to once again to stage a campaign against the Ten Towns. Hardly a surprising development given the history of the region but no less troubling. If the clans are truly poised to unite they could become a force that would overrun the Ten Towns.~
+@543 = ~So, the barbarians are poised to once again stage a campaign against the Ten Towns. Hardly a surprising development given the history of the region but no less troubling. If the clans are truly uniting they could become a force that would overrun the Ten Towns.~
 @544 = ~Again? This has happened before?~
 @545 = ~If Hjollder believes that we will find a way to stop this conflict and that is what I intend to do.~
 @546 = ~Perhaps it is their right then. These are their ancestral lands after all.~
@@ -588,7 +588,7 @@
 @581 = ~(Snorts) Don't let yourself be taken in by it's deception. That's how it will get you to lower your guard. Someone has clearly been here before us and somewhat recently as well.~
 @582 = ~(She nods slowly, taking deep breaths which turn to vapors as she regards the glacier which closes in around you like spindly fingers.)~
 @583 = ~You know you really aren't helping my nerves one bit.~
-@584 = ~This seer must have truly hate outside contact for her to come all the way out here. What use is her sight and council if those requiring it perish in their attempts to reach her?~
+@584 = ~This seer must have truly hated outside contact for her to come all the way out here. What use is her sight and council if those requiring it perish in their attempts to reach her?~
 @585 = ~It is like Hjollder said, only the worthy are deserving of her council.~
 @586 = ~Maybe so that people don't bother her with trivial questions?~
 @587 = ~Ah, come now. We've faced worse challenges than finding some old crone in an ice cave.~
@@ -767,7 +767,7 @@
 @760 = ~Not now, <PLAYER1>. I wish to be alone with my thoughts.~
 @761 = ~Can I help you, <PLAYER1>?~
 @762 = ~(Flirt)~
-@763 = ~Any thoughts in things in general?~
+@763 = ~Any thoughts about things in general?~
 @764 = ~I would like to hear more about Helm, Cassia.~
 @765 = ~What's your impression of the Dale?~
 @766 = ~Do people often comment on your heritage?~
@@ -919,7 +919,7 @@
 @912 = ~...why are we smiling again?~
 @913 = ~Are you always this distracted, <PLAYER1>? Keep a wary eye about! Our enemies could be lurking behind every corner.~
 @914 = ~(Cassia keeps her gaze locked ahead, her holy symbol clinking against her breastplate as she walks.)~
-@915 = ~(Noticing your gaze, Cassia tilts her head briefly in your direction. When your eyes meet she immediately snaps her gaze away immediately.)~
+@915 = ~(Noticing your gaze, Cassia tilts her head briefly in your direction. When your eyes meet she immediately snaps her gaze away.)~
 @916 = ~(For the next few minutes seems to do everything she can to avoid eye contact with you.)~
 @917 = ~Thank you, <PLAYER1> but I've still got plenty in my own waterskin.~
 @918 = ~The offer is appreciated but I will manage by myself. You surely have more need of it than I and you needn't go thirsty on my account.~
@@ -939,7 +939,7 @@
 @932 = ~Was there something you were looking for, <PLAYER1>?~
 @933 = ~(You reach your hand towards the tail but it quickly slips from your grasp and give you an almost painful slap on the wrist.)~
 @934 = ~(As you rub you massage your wrist you swear you can hear Cassia humming innocently to herself.)~
-@935 = ~And your faith likewise inspires me, milord. It is always a pleasure to share the company of a champion of rightousness.~
+@935 = ~And your faith likewise inspires me, milord. It is always a pleasure to share the company of a champion of righteousness.~
 @936 = ~Your chivalry is seen and appreciated, milord. Know that the lady in question smiles favourably upon your courageous actions.~
 @937 = ~It gladdens my heart to hear this, milady. May our actions shine as a beacon of hope for the people of the north.~
 @938 = ~(Sigh) Don't worry. I am sure the Great Guard has more pressing concerns than your petty larceny.~

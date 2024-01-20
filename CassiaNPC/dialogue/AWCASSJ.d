@@ -1949,95 +1949,96 @@ END
 
 //Presio Fix Enemy() scripting issue; Should work now
 I_C_T DUNDLT2 0 AWCassPRESIO0
-== AWCassJ @675
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @675
 == DUNDLT2 @1037
 END
 I_C_T DUNDLT2 1 AWCassPRESIO1
-== AWCassJ @675
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @675
 == DUNDLT2 @1037
 END
 
-//Yxonumei (Might have enemy() bug, needs testing)
+//Yxonumei (DYXUN response needed to prevent Cassia from going hostile from the enemy() script)
 I_C_T DYXUN 0 AWCassYXUNG
-== AWCassJ @682
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @682
+== DYXUN ~~
 END
 
 
 //False Arundel 
 I_C_T DARUNDEL 82 AWCassARUNDELDETH
-== AWCassJ @689
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @689
 END
 
 //Denaini 
 I_C_T DDENAINI 13 AWCassDENAINI0
-== AWCassJ @690
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @690
 == DDENAINI @988
 END
 
 //Larrel
 I_C_T DLARREL 29 AWCassLarrel0
-== AWCassJ @1017
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @1017
 == DLARREL @1018 
 END
 
 //Bandoth 
 I_C_T DBANDOTH 17 AWCassBANDOTH0
-== AWCassJ @691
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @691
 == DBANDOTH @989
 END
 
 //Norlinor 
 I_C_T DNORLINO 9 AWCassNORLINO0
-== AWCassJ @692
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @692
 END
 
 //Gareth 
 I_C_T DGARETH 23 AWCassGARETH0
-== AWCassJ @696
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @696
 == DGARETH @990
 END
 
 //Durdel 
 INTERJECT DVOICEDA 13 AWCassDURDEL0
-== AWCassJ @697
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @697
 == DVOICEDA @991 
 DO ~~ EXIT 
 
 //Marketh 
 I_C_T DMARKETH 6 AWCassMARKETH0
-== AWCassJ @698
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @698
 END
 
 //Ilmadia 
 I_C_T DILMADIA 11 AWCassILMADIA0
-== AWCassJ @701
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @701
 == DILMADIA @992
 END
 
 //Nym
 I_C_T DNYM 7 AWCassNYM0
-== AWCassJ @1038
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @1038
 END
 
 // Belhifet
 I_C_T DBELHIFE 11 AWCassBELHIFE0
-== AWCassJ @702
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @702
 END
 
 // Ambere
 I_C_T DAMBERE 6 AWCassDunn0
-== AWCassJ @703
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @703
 END
 
 // Wylfdene
 I_C_T DWYLF 10 AWCassWylfdene0
-== AWCassJ @708
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @708
 == DWYLF @993
 END
 
 // Icasaracht
 I_C_T DICASA 22 AWCassIcasa
-== AWCassJ @709
+== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @709
 == DICASA @994
 END
 

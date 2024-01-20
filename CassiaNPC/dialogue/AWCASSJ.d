@@ -1882,169 +1882,168 @@ CHAIN IF WEIGHT #-5 ~Global("AWCassBELOWCHEST","GLOBAL",1)~ THEN AWCassJ CASS.RE
 
 //Everard
 I_C_T DEVERARD 7 AWCassEverard0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @655
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @655
 == DEVERARD @982
 END
 
 //Jhonen
 I_C_T DJHONEN 12 AWCassJHONEN0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @656
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @656
 == DJHONEN @983
 END
 
 //Jhonen
 I_C_T DJHONEN 9 AWCassJHONEN0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @657
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @657
 END
 
 
 //Old Jed
 I_C_T DOLDJED 5 AWCassOLDJED0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @661
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @661
 END
 
 //Goblin Marshal
 I_C_T DGOBLINC 7 AWCassGOBLIN0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @664
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @664
 END
 
 //Jermsy
 I_C_T DJERMSY 3 AWCassJERMSY0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @665
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @665
 END
 
 //Nate
 INTERJECT DNATE 5 AWCassNATEHOSTILE
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @667
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @667
 DO ~LeaveParty() Enemy()~ EXIT
 
 //Orrick 
 I_C_T DORRICK 3 AWCassORRICK0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @668
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @668
 == DORRICK @984
 END
 
 //Aldwin
 I_C_T DALDWIN 22 AWCassALDWIN0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @669
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @669
 == DALDWIN @985
 END
 
 //Sister Calliana
 I_C_T DCALLIAN 3 AWCassCALLIAN0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @670
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @670
 == DCALLIAN @986
 END
 
 //Mytos
 I_C_T DMYTOS 3 AWCassMYTOS
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @671
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @671
 == DMYTOS @987
 END
 
 //Lysan 
 I_C_T DLYSANPR 18 AWCassLYSANPR
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @672
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @672
 END
 
 //Presio Fix Enemy() scripting issue; Should work now
 I_C_T DUNDLT2 0 AWCassPRESIO0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @675
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @675
 == DUNDLT2 @1037
 END
 I_C_T DUNDLT2 1 AWCassPRESIO1
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @675
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @675
 == DUNDLT2 @1037
 END
 
 //Yxonumei (DYXUN response needed to prevent Cassia from going hostile from the enemy() script)
-I_C_T DYXUN 0 AWCassYXUNG
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @682
-== DYXUN ~~
+I_C_T2 DYXUN 0 AWCassYXUNG
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @682
 END
 
 
 //False Arundel 
 I_C_T DARUNDEL 82 AWCassARUNDELDETH
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @689
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @689
 END
 
 //Denaini 
 I_C_T DDENAINI 13 AWCassDENAINI0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @690
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @690
 == DDENAINI @988
 END
 
 //Larrel
 I_C_T DLARREL 29 AWCassLarrel0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @1017
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @1017
 == DLARREL @1018 
 END
 
 //Bandoth 
 I_C_T DBANDOTH 17 AWCassBANDOTH0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @691
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @691
 == DBANDOTH @989
 END
 
 //Norlinor 
 I_C_T DNORLINO 9 AWCassNORLINO0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @692
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @692
 END
 
 //Gareth 
 I_C_T DGARETH 23 AWCassGARETH0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @696
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @696
 == DGARETH @990
 END
 
 //Durdel 
 INTERJECT DVOICEDA 13 AWCassDURDEL0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @697
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @697
 == DVOICEDA @991 
 DO ~~ EXIT 
 
 //Marketh 
 I_C_T DMARKETH 6 AWCassMARKETH0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @698
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @698
 END
 
 //Ilmadia 
 I_C_T DILMADIA 11 AWCassILMADIA0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @701
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @701
 == DILMADIA @992
 END
 
 //Nym
 I_C_T DNYM 7 AWCassNYM0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @1038
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @1038
 END
 
 // Belhifet
 I_C_T DBELHIFE 11 AWCassBELHIFE0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @702
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @702
 END
 
 // Ambere
 I_C_T DAMBERE 6 AWCassDunn0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @703
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @703
 END
 
 // Wylfdene
 I_C_T DWYLF 10 AWCassWylfdene0
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @708
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @708
 == DWYLF @993
 END
 
 // Icasaracht
 I_C_T DICASA 22 AWCassIcasa
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @709
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @709
 == DICASA @994
 END
 
 //Criek of Bane
 INTERJECT DCRIECK 2 AWCassCriek
-== AWCassJ IF ~IsValidForPartyDialog("AWCass")~ THEN @995
+== AWCassJ IF ~InParty("AWCass") !StateCheck("AWCass",CD_STATE_NOTVALID)~ THEN @995
 DO ~~ EXTERN DCRIECK 4
 
 //PID

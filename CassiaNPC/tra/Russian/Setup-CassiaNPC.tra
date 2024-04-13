@@ -1,0 +1,68 @@
+@0 = ~Cassia NPC for Icewind Dale: Enhanced Edition~
+@1 = ~This component must be installed on IWD:EE.~
+//Portrait
+@2 = ~Choose a portrait for Cassia (check mod folder for portraits):~
+@3 = ~Please choose one of the following:
+[1] Default grey by Takeda11
+[2] Darker blue by Takeda11~
+@4 = ~Installing Portrait: Default grey by Takeda11~
+@5 = ~Installing Portrait: Darker blue by Takeda11~
+            //Cassia's Soundset
+@6 = ~Кассия~
+@7 = ~Когда Кассию спрашивают о её прошлом, она рассказывает, что пришла из Мирабара, великого города, построенного на месте поселения дварфов в предгорьях Хребта Мира. Насколько можно понять, она была единственным ребёнком в семье и воспитывалась матерью и приемным отцом, который и приобщил ее к вере. Она с гордостью рассказывает о своем посвящении в священнослужители Хелма и, кажется, жаждет служить своему богу, хотя порой и сомневается, как это лучше сделать.~
+@8 = ~They have the field this day!~ [awcas01]
+@9 = ~I will do my best to keep us out of harm's way.~ [awcas02]
+@10 = ~If I have to take another step, my feet will fall off.~ [awcas03]
+@11 = ~I think I can feel mold growing on my feet.~ [awcas04]
+@12 = ~Your time draws near.~ [awcas05]
+@13 = ~Face me if you dare.~ [awcas06]
+@14 = ~May the gods have mercy on you.~ [awcas07]
+@15 = ~Surrender!~ [awcas08]
+@16 = ~I'll take care of this one!~ [awcas09]
+@17 = ~Oohh!~ [awcas10]
+@18 = ~Aih! Uhh...~ [awcas11]
+@19 = ~I don't want to die here...~ [awcas12]
+@20 = ~Stay on your guard. Who knows what manner of beast lurks in these woods.~
+@21 = ~Step by step, the march of civilization carries onward. Splendid is it not?~
+@22 = ~Oh Vigilant One, God of Guardians and He Who is Unsleeping... grant me your sight within this twilight, that I might banish the horrors which call it home.~
+@23 = ~The sun rises once more. Though in these times I find it almost blinding.~
+@24 = ~The night closes in, but it shall not blind this servant of the Vigilant One.~
+@25 = ~Something amiss?~ [awcas13]
+@26 = ~I hear you.~ [awcas14]
+@27 = ~Do you need me?~ [awcas15]
+@28 = ~Name your task.~ [awcas16]
+@29 = ~Can I help?~ [awcas17]
+@30 = ~Yes?~ [awcas18]
+@31 = ~Immediately.~ [awcas19]
+@32 = ~Here?~ [awcas20]
+@33 = ~I'll take care of it.~ [awcas21]
+@34 = ~All right.~ [awcas22]
+@35 = ~Well and good.~ [awcas23]
+@36 = ~I'll do my best.~ [awcas24]
+@37 = ~With all haste.~ [awcas25]
+@38 = ~Look, I'm *listening*, all right?~ [awcas26]
+@39 = ~You are making me mad on *so* many levels right now.~ [awcas27]
+@40 = ~The battle turns against us!~ [awcas28]
+@41 = ~What manner of devilry is this!?~
+@42 = ~I'm afraid I am taxed to my limits. I cannot carry that.~
+@43 = ~I shall light a candle for you.~ [awcas29]
+@44 = ~Ugh!~ [awcas30]
+//Lordranis
+@45 = ~Sir Lordranis~
+//Gnome
+@46 = ~Exhausted Svirfneblin~
+//Holy Symbol of Helm
+@47 = ~Ring~
+@48 = ~Holy Symbol of Helm~
+@49 = ~Only the most worthy and devoted servants of the Watcher are granted these powerful holy symbols.
+
+STATISTICS:
+
+Equipped abilities:
+Strength: +1
+Magic Resistance: +5%
+Can memorize one extra 6th- and 7th-level Cleric spell
+
+Weight: 0~
+//Healing Spell Patch
+@50 = ~Replace Healing Spells with copies that can affect Tieflings?~

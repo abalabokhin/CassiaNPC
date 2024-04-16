@@ -5,6 +5,7 @@ VERSION ~v1.05b~
 AUTO_TRA ~CassiaNPC/tra/%s~
 
 LANGUAGE ~English~ ~English~ ~CassiaNPC/tra/English/Setup-CassiaNPC.tra~
+LANGUAGE ~Russian (translated by skusha)~ ~Russian~ ~CassiaNPC/tra/Russian/Setup-CassiaNPC.tra~
 
 BEGIN @0
   REQUIRE_PREDICATE (GAME_IS ~iwdee~) @1

@@ -132,9 +132,9 @@ CHAIN AWCassJ Cassia-KuldaharMission-7
 
 CHAIN AWCassJ Cassia-KuldaharMission-8
 @51
-= ~Just keep calm and focus on the task at hand. I'll try to keep your words in mind.~
-= ~And... thank you for being patient with me. I try to keep my emotions under wraps as best I can but I fear the stress of the situation has gotten to me.~
-END 
+= @52
+= @53
+END
 ++ @54 + Cassia-KuldaharMission-9
 ++ @55 + Cassia-KuldaharMission-10
 ++ @56 + Cassia-KuldaharMission-11

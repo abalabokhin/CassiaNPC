@@ -467,7 +467,7 @@ CHAIN AWCassJ Cassia-RootCellarDate-30
 
 CHAIN AWCassJ Cassia-RootCellarDate-32
 @178
-= @179 DO ~IncrementGlobal("AWCass-RomanceActive", "GLOBAL", 3)~ EXIT
+= @179 DO ~SetGlobal("AWCass-RomanceActive", "GLOBAL", 3)~ EXIT
 
 //Temple of the Forgotten God
 CHAIN IF WEIGHT #-1 ~Global("AWCass-FaithlessTalk","GLOBAL",1)~ THEN AWCassJ Cassia-FaithlessTalk

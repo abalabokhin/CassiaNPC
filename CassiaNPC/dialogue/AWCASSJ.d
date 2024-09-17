@@ -1506,11 +1506,11 @@ END
 ++ @580 + Cassia-Gloomfrost-3
 
 CHAIN AWCassJ Cassia-Gloomfrost-1
-@581
+@582
 EXTERN AWCassJ Cassia-Gloomfrost-4
 
 CHAIN AWCassJ Cassia-Gloomfrost-2
-@582
+@581
 EXTERN AWCassJ Cassia-Gloomfrost-4
 
 CHAIN AWCassJ Cassia-Gloomfrost-3

@@ -943,7 +943,7 @@ CHAIN AWCassJ Cassia-CH4RomTalk-3
 @350
 = @351
 = @352
-= @1024 DO ~SetGlobal("AWCass-RomanceActive","GLOBAL",2)~ EXIT
+= @1100 DO ~SetGlobal("AWCass-RomanceActive","GLOBAL",2)~ EXIT
 
 //Upper Dorns Dwarf Talk
 CHAIN IF WEIGHT #-1 ~Global("AWCass-DwarfTalk","GLOBAL",1)~ THEN AWCassJ Cassia-DwarfTalk

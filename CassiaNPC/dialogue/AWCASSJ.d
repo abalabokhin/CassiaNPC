@@ -132,9 +132,9 @@ CHAIN AWCassJ Cassia-KuldaharMission-7
 
 CHAIN AWCassJ Cassia-KuldaharMission-8
 @51
-= ~Just keep calm and focus on the task at hand. I'll try to keep your words in mind.~
-= ~And... thank you for being patient with me. I try to keep my emotions under wraps as best I can but I fear the stress of the situation has gotten to me.~
-END 
+= @52
+= @53
+END
 ++ @54 + Cassia-KuldaharMission-9
 ++ @55 + Cassia-KuldaharMission-10
 ++ @56 + Cassia-KuldaharMission-11
@@ -467,7 +467,7 @@ CHAIN AWCassJ Cassia-RootCellarDate-30
 
 CHAIN AWCassJ Cassia-RootCellarDate-32
 @178
-= @179 DO ~IncrementGlobal("AWCass-RomanceActive", "GLOBAL", 3)~ EXIT
+= @179 DO ~SetGlobal("AWCass-RomanceActive", "GLOBAL", 3)~ EXIT
 
 //Temple of the Forgotten God
 CHAIN IF WEIGHT #-1 ~Global("AWCass-FaithlessTalk","GLOBAL",1)~ THEN AWCassJ Cassia-FaithlessTalk
@@ -943,7 +943,7 @@ CHAIN AWCassJ Cassia-CH4RomTalk-3
 @350
 = @351
 = @352
-= @1024 DO ~SetGlobal("AWCass-RomanceActive","GLOBAL",2)~ EXIT
+= @1100 DO ~SetGlobal("AWCass-RomanceActive","GLOBAL",2)~ EXIT
 
 //Upper Dorns Dwarf Talk
 CHAIN IF WEIGHT #-1 ~Global("AWCass-DwarfTalk","GLOBAL",1)~ THEN AWCassJ Cassia-DwarfTalk
@@ -1506,11 +1506,11 @@ END
 ++ @580 + Cassia-Gloomfrost-3
 
 CHAIN AWCassJ Cassia-Gloomfrost-1
-@581
+@582
 EXTERN AWCassJ Cassia-Gloomfrost-4
 
 CHAIN AWCassJ Cassia-Gloomfrost-2
-@582
+@581
 EXTERN AWCassJ Cassia-Gloomfrost-4
 
 CHAIN AWCassJ Cassia-Gloomfrost-3
